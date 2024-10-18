@@ -3,70 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Kontak</title>
+    <!-- Meta Tags -->
+    <meta name="title" content="Kontak">
+    <meta name="description" content="Hubungi Joyfullcrunch untuk pertanyaan, saran, atau informasi lebih lanjut tentang produk dan aktivitas kami. Kami siap membantu Anda dan memberikan pengalaman terbaik.">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="<?= current_url()?>"></style>
+
     <style>
-          html, body {
-              height: 100%;
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;
-              font-family: Inika, sans-serif;
-          }
+          body, html {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Inika', serif;
+                overflow-x: hidden; /* Prevent horizontal scrolling */
+            }
 
-          /* Responsif pada ukuran layar */
-          .header {
-              width: 100%; /* Sesuaikan dengan lebar layar */
-              height: 83px;
-              background: white;
-              display: flex;
-              align-items: center;
-              padding: 0 15px;
-              box-sizing: border-box;
-              justify-content: space-between; /* Space between logo and nav elements */
-          }
+            /* Header umum */
+            .header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 75px;
+                background: white;
+                display: flex;
+                align-items: center;
+                padding: 0 15px;
+                justify-content: space-between;
+                z-index: 1000;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
 
-          .logo {
-              margin-right: 2vw;
-              margin-left: 12vw; /* Menggunakan vw agar lebih responsif */
-          }
+            /* Tambahkan jarak pada bagian atas konten agar tidak tertutup header */
+            body {
+                padding-top: 75px; /* Sesuaikan padding dengan tinggi header */
+            }
 
-          .logo img {
-              height: 60px;
-              width: auto;
-              max-width: 100%;
-          }
+            /* Logo */
+            .logo {
+                margin-right: 2vw;
+                margin-left: 10vw; /* Menggunakan vw agar lebih responsif */
+            }
 
-          /* Mengatur font umum untuk seluruh elemen */
+            .logo img {
+                height: 50px;
+                width: auto;
+                max-width: 100%;
+            }
+
+            /* Mengatur font umum untuk seluruh elemen */
             .nav-container,
             .nav-links a,
-            .language-selector .selected-language div,
-            .language-selector .language-menu div {
-                font-family: Arial, sans-serif; /* Jenis teks yang sama */
-                font-size: 16px; /* Ukuran teks yang sama */
+            .selected-language,
+            .language-menu div {
+                font-family: 'Inika', serif; /* Pastikan menggunakan font yang sama di semua elemen */
+                font-size: 18px; /* Sesuaikan ukuran font jika perlu */
                 color: black; /* Warna teks sama */
             }
 
-            /* Style untuk link navigasi */
+            /* Container navigasi */
             .nav-container {
                 display: flex;
                 align-items: center;
-                justify-content: flex-start; /* Meratakan ke kiri */
-                z-index: 10; /* Tetap di atas overlay */
             }
 
+            /* Link navigasi */
             .nav-links {
                 display: flex;
-                align-items: center;
-                margin-right: 2vw; /* Lebih fleksibel */
+                gap: 20px; /* Konsisten antar elemen */
+                margin-left: auto; /* Alignment otomatis ke kiri */
+                padding-right: 2vw; /* Tambahan spasi di kanan */
             }
 
+            /* Efek klik lingkaran coklat */
             .nav-links a {
-                font-weight: 400;
-                line-height: 24px;
+                position: relative;
+                padding: 10px 15px;
                 text-decoration: none;
-                padding: 15px;
-                display: flex;
-                align-items: center;
+                font-size: 18px;
+                color: black;
+                transition: background-color 0.3s ease, border-radius 0.3s ease;
+            }
+
+            /* Efek hover */
+            .nav-links a:hover {
+                background-color: #E2CEB1; /* Warna coklat kekuningan */
+                border-radius: 20px; /* Bentuk melingkar */
+            }
+
+            /* Active state: tetap berada di menu aktif */
+            .nav-links a.active {
+                background-color: #E2CEB1; /* Warna coklat kekuningan */
+                border-radius: 20px; /* Bentuk melingkar */
             }
 
             /* Language Selector */
@@ -74,11 +105,13 @@
                 position: relative;
                 display: flex;
                 align-items: center;
-                margin-left: -1.5vw; /* Digeser ke kiri */
-                z-index: 10; /* Tetap di atas overlay */
+                margin-left: 10px;
+                z-index: 10;
+                font-family: 'Inika', serif; /* Konsisten dengan font yang sama */
+                font-size: 18px;
             }
 
-            .language-selector .language-menu {
+            .language-menu {
                 display: none;
                 position: absolute;
                 top: 100%;
@@ -94,34 +127,262 @@
                 display: block;
             }
 
-            .language-selector .language-menu div {
+            .language-menu div {
+                font-family: 'Inika', serif; /* Konsisten dengan font yang sama */
+                font-size: 18px;
                 padding: 5px 10px;
                 cursor: pointer;
             }
-
-            .language-selector .language-menu div:hover {
+            .language-menu div:hover {
                 background: #f0f0f0;
             }
 
-            .language-selector .selected-language {
+            .selected-language {
                 display: flex;
                 align-items: center;
                 cursor: pointer;
             }
 
-            .language-selector .arrow {
+            .arrow {
                 width: 14px;
                 height: 9px;
                 background: black;
                 margin-left: 5px;
             }
-          </style>
-          <script>
-              function toggleLanguageMenu() {
-                  const languageSelector = document.querySelector('.language-selector');
-                  languageSelector.classList.toggle('active');
-              }
 
+            /* Hamburger icon */
+            .hamburger {
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+                gap: 5px;
+            }
+
+            .hamburger div {
+                width: 25px;
+                height: 3px;
+                background-color: #391E10;
+            }
+
+            /* Responsif: Tampilkan hamburger icon pada layar kecil */
+            @media (max-width: 768px) {
+                .nav-links {
+                    display: none; /* Sembunyikan link navigasi */
+                    flex-direction: column;
+                    position: absolute;
+                    top: 75px;
+                    left: 0;
+                    width: 100%;
+                    background-color: white;
+                    padding: 20px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                .nav-links.active {
+                    display: flex; /* Tampilkan link navigasi saat icon diklik */
+                }
+
+                .hamburger {
+                    display: flex; /* Tampilkan ikon hamburger pada layar kecil */
+                }
+            }
+
+            .card-container {
+                width: 100%;
+                max-width: 1000px;
+                padding: 30px;
+                background: #EEEEEE;
+                border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                margin: 100px auto; /* Pusatkan kotak dan tambahkan jarak dari atas */
+                position: relative;
+            }
+
+            .first-layer {
+                position: absolute;
+                top: 25px;
+                left: 20px;
+                width: 100%;
+                height: 100%;
+                background: #E2CEB1;
+                border-radius: 15px;
+                z-index: -1;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .left-section {
+                flex: 1;
+                min-width: 250px;
+                margin-right: 50px; /* Jarak antara left-section dan right-section */
+            }
+
+            .right-section {
+                flex: 1;
+                min-width: 250px;
+            }
+            /* Contact Form Styling */
+            .form-group {
+                margin-bottom: 15px;
+            }
+
+            .form-group label {
+                color: #734128;
+                font-size: 15px;
+                font-family: 'Causten-Regular';
+                margin-bottom: 5px;
+                display: block;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 8px;
+                border-radius: 4px;
+                border: 2px solid #734128; /* Border gelap di sekeliling input/textarea */
+                background: F5F5F5; /* Latar belakang tetap putih */
+                font-family: 'Causten-Regular';
+                color: #734128; /* Warna teks lebih gelap untuk kontras */
+                outline: none;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk membuat kotak terlihat lebih jelas */
+            }
+
+            .form-group textarea {
+                height: 60px;
+                resize: none;
+            }
+
+            .form-group input:focus,
+            .form-group textarea:focus {
+                border-color: #BD6B43; /* Warna border berubah ketika input/textarea dalam fokus */
+                box-shadow: 0 0 8px rgba(189, 107, 67, 0.5); /* Efek bayangan lebih intens saat fokus */
+            }
+
+            .submit-button {
+                width: 117px;
+                height: 32px;
+                background: #BD6B43;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+
+            .submit-button div {
+                color: black;
+                font-size: 15px;
+                font-family: 'Inika';
+            }
+
+            /* Map Styling */
+            .map-container {
+                width: 100%;
+                height: 211px;
+                border-radius: 10px;
+                overflow: hidden;
+                border: 2px #391E10 solid;
+                margin-bottom: 15px;
+            }
+
+            /* Address Box Styling */
+            .address-box {
+                width: 95%;
+                background: #FDFCE8;
+                border-radius: 15px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .address-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .icon {
+                width: 20px;
+                height: 20px;
+                background: #BD6B43;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .icon div {
+                width: 10px;
+                height: 10px;
+                background: white;
+            }
+
+            .icon-instagram div {
+                color: white;
+                font-size: 10px;
+                font-family: "Font Awesome 5 Brands";
+            }
+
+            .address-text {
+                color: black;
+                font-size: 14px;
+                font-family: 'Inika';
+                font-weight: 400;
+            }
+
+            .icon {
+                width: 20px;
+                height: 20px;
+                background: none; /* Hilangkan background bulat */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .icon i {
+                font-size: 18px; /* Ukuran ikon */
+                color: #BD6B43; /* Warna ikon */
+            }
+
+            /* Tambahan untuk mengatur margin agar kotak form ada jarak dengan gambar di atasnya */
+            .contact-header {
+                text-align: center;
+                margin-bottom: 20px; /* Beri jarak antara header dan form */
+            }
+
+            /* Responsif */
+            @media (max-width: 768px) {
+                .card-container {
+                    width: 95%; /* Membuat lebar penuh pada layar kecil */
+                    padding: 15px;
+                }
+
+                .content {
+                    flex-direction: column; /* Membuat section stack vertikal */
+                }
+
+                .left-section, .right-section {
+                    min-width: 100%; /* Membuat bagian kiri dan kanan penuh pada layar kecil */
+                }
+            }
+    </style>
+    <script>
+              function toggleLanguageMenu() {
+                  var languageMenu = document.querySelector('.language-selector');
+                  languageMenu.classList.toggle('active');
+              }
+              function toggleNav() {
+                  var navLinks = document.querySelector('.nav-links');
+                  navLinks.classList.toggle('active');
+              }
               function changeLanguage(language) {
                   alert(`Language changed to ${language}`);
                   // Add code here to actually change the language, if applicable
@@ -144,76 +405,36 @@
                             emailLabel.style.fontSize = '14px';
                         }
                     });
-
-                    @media (max-width: 1024px) {
-                      img {
-                        width: 70%;
-                        left: 50%;
-                        transform: translateX(-50%);
-                      }
-
-                      div[style*="left: 798px"] {
-                        left: 50% !important;
-                        transform: translateX(-50%);
-                      }
-
-                      div[style*="left: 234px"] {
-                        left: 50% !important;
-                        transform: translateX(-50%);
-                      }
-                    }
-
-                    @media (max-width: 768px) {
-                      img {
-                        width: 90%;
-                        height: auto;
-                        left: 50%;
-                        transform: translateX(-50%);
-                      }
-
-                      div[style*="left: 798px"] {
-                        left: 50% !important;
-                        transform: translateX(-50%);
-                      }
-
-                      div[style*="left: 234px"] {
-                        left: 50% !important;
-                        transform: translateX(-50%);
-                      }
-
-                      div[style*="font-size: 48px"] {
-                        font-size: 36px;
-                      }
-
-                      div[style*="width: 458px"] {
-                        width: 90%;
-                      }
-                    }
           </script>
 </head>
 <body>
-    <!-- Header with navigation -->
-    <div class="header">
-          <!-- Logo -->
-          <div class="logo">
-              <img src="image/logo.png" alt="Logo">
-          </div>
+<div class="header">
+      <!-- Logo -->
+      <div class="logo">
+          <img src="image/logo.png" alt="Logo">
+      </div>
 
-          <!-- Navigation Container -->
-          <div class="nav-container">
-              <div class="nav-links">
-                  <a href="#">Home</a>
-                  <a href="#">About</a>
-                  <a href="#">Blog</a>
-                  <a href="#">Products</a>
-                  <a href="#">Activities</a>
-                  <a href="#">Contact</a>
-              </div>
+      <!-- Hamburger Icon (hanya muncul di mobile) -->
+      <div class="hamburger" onclick="toggleNav()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
 
-              <!-- Language Selector -->
+      <!-- Navigation Container -->
+      <div class="nav-container">
+          <div class="nav-links">
+              <a href="<?= base_url('/') ?>">Beranda</a>
+              <a href="<?= base_url('tentang') ?>">Tentang</a>
+              <a href="<?= base_url('artikel') ?>">Artikel</a>
+              <a href="<?= base_url('produk') ?>">Produk</a>
+              <a href="<?= base_url('aktivitas') ?>">Aktivitas</a>
+              <a href="<?= base_url('kontak') ?>" class="active">Kontak</a>
+
+              <!-- Language Selector (pindah ke dalam .nav-links) -->
               <div class="language-selector">
                   <div class="selected-language" onclick="toggleLanguageMenu()">
-                      <div>Language</div>
+                      <div>Bahasa</div>
                       <div class="arrow"></div>
                   </div>
                   <div class="language-menu">
@@ -223,61 +444,115 @@
               </div>
           </div>
       </div>
-      <div style="width: 100%; height: 701px; left: 0; top: 84px; position: absolute; background: #E2CEB1;"></div>
-      <div style="width: 252px; left: 50%; top: 123px; position: absolute; text-align: center; color: #734128; font-size: 48px; font-family: Inika; font-weight: 700; line-height: 44px; transform: translateX(-50%);">
-  Contact
+  </div>
+
+  <div style="position: relative; width: 100%; height: 30vh; margin-bottom: 0;"> 
+      <!-- Gambar responsif -->
+      <img alt="tentang" src="image/tentang.png" style="width: 100%; height: 100%; object-fit: cover; margin-bottom: 0; padding: 0; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);" /> 
+
+      <!-- Overlay untuk gambar -->
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.50);"></div>
+
+      <!-- Teks responsif di tengah gambar -->
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center;">
+          <div style="color: #E2CEB1; font-size: 3vw; font-family: Inika; font-weight: 700; line-height: 1.1; word-wrap: break-word;">
+              Kontak
+          </div>
+      </div>
+  </div>
+
+    <div class="card-container">
+        <!-- First Layer (Double Layer Effect) -->
+        <div class="first-layer"></div>
+
+        <div class="content">
+            <!-- Left Section: Contact Form -->
+            <div class="left-section">
+                <!-- Contact Form -->
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" placeholder="Masukkan Nama">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan E-Mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" placeholder="Masukkan Pesan Kamu"></textarea>
+                </div>
+
+                <div class="submit-button">
+                    <div>Kirim</div>
+                </div>
+            </div>
+
+            <!-- Right Section: Map and Address Box -->
+            <div class="right-section">
+                <!-- Map Location -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.207184194719!2d112.61623191506712!3d-7.976604894063124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78a9c057024357%3A0x4b21b31f54c663e4!2sSawo%20Jajar%2C%20Kota%20Malang%2C%20Jawa%20Timur%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1696851641541"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+                <!-- Address Box -->
+                <div class="address-box">
+                    <div class="address-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i> <!-- Ikon lokasi -->
+                        </div>
+                        <div class="address-text">Sawojajar, Kota Malang, Jawa Timur, Indonesia.</div>
+                    </div>
+
+                    <div class="address-item">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i> <!-- Ikon telepon -->
+                        </div>
+                        <div class="address-text">+62 521 735 629 700 (WhatsApp)</div>
+                    </div>
+
+                    <div class="address-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i> <!-- Ikon email -->
+                        </div>
+                        <div class="address-text">joyfulcrunch@gmail.com</div>
+                    </div>
+
+                    <div class="address-item">
+                        <div class="icon icon-instagram">
+                            <i class="fab fa-instagram"></i> <!-- Ikon Instagram -->
+                        </div>
+                        <div class="address-text">@joyful.crunch</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+  <div style="width: 100%; height: 90px; background: #734128; border-top: 1px rgba(255, 255, 255, 0.17) solid; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; box-sizing: border-box;">
+  <!-- Copyright -->
+  <div style="color: #FDFCE8; font-size: 11px; font-family: DM Sans; font-weight: 400; word-wrap: break-word;">
+    Copyright © 2024 Joyful Crunch, Design by Joyful Crunch
+  </div>
+  <!-- Ikon sosial media -->
+  <div style="display: flex; gap: 20px;">
+    <a href="https://www.facebook.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
+      <i class="fab fa-facebook-f" style="color: #E2CEB1; font-size: 18px;"></i>
+    </a>
+    <a href="https://www.youtube.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
+      <i class="fab fa-youtube" style="color: #E2CEB1; font-size: 18px;"></i>
+    </a>
+    <a href="https://www.twitter.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
+      <i class="fab fa-twitter" style="color: #E2CEB1; font-size: 18px;"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
+      <i class="fab fa-instagram" style="color: #E2CEB1; font-size: 18px;"></i>
+    </a>
+  </div>
 </div>
-<div style="width: 252px; height: 0px; left: 50%; top: 169.50px; position: absolute; border: 1px black solid; transform: translateX(-55%);"></div>
-
-      <img style="width: 458px; height: 211px; left: 798px; top: 240px; position: absolute; border-radius: 10px; border: 2px #391E10 solid;" src="https://via.placeholder.com/458x211" />
-
-      <div style="width: 458px; padding: 15px; left: 798px; top: 473px; position: absolute; background: #FDFCE8; border-radius: 15px; justify-content: center; align-items: center; display: inline-flex;">
-        <div style="flex: 1 1 0; align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 9.50px; display: inline-flex;">
-          <div style="align-self: stretch; height: 42px; padding-left: 10px; padding-right: 3.44px; justify-content: flex-end; align-items: center; gap: 10px; display: inline-flex;">
-            <div style="width: 19.50px; height: 20px; background: #BD6B43; border-radius: 9.88px; display: inline-flex; justify-content: center; align-items: center;">
-              <div style="width: 7.50px; height: 10px; background: white;"></div>
-            </div>
-            <div style="width: 384.56px; height: 42px; color: black; font-size: 14px; font-family: Inika; font-weight: 400; line-height: 21px; word-wrap: break-word;">Sawojajar, Kota Malang, Jawa Timur, Indonesia.</div>
-          </div>
-
-          <div style="align-self: stretch; height: 26.50px; padding-bottom: 5px; padding-left: 10px; padding-right: 182.28px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex;">
-            <div style="width: 22px; height: 20px; background: #BD6B43; border-radius: 10.50px; display: inline-flex; justify-content: center; align-items: center;">
-              <div style="width: 10px; height: 10px; background: white;"></div>
-            </div>
-            <div style="width: 203.22px; height: 21px; color: black; font-size: 14px; font-family: Inika; font-weight: 400; line-height: 21px;">+62 521 735 629 700 (WhatsApp)</div>
-          </div>
-
-          <div style="align-self: stretch; height: 26.50px; padding-bottom: 5px; padding-left: 10px; padding-right: 184.50px; justify-content: flex-start; align-items: flex-end; gap: 10px; display: inline-flex;">
-            <div style="width: 22px; height: 20px; background: #BD6B43; border-radius: 10.50px; display: inline-flex; justify-content: center; align-items: center;">
-              <div style="width: 9.69px; height: 9.69px; background: white;"></div>
-            </div>
-            <div style="width: 201px; height: 21px; color: black; font-size: 14px; font-family: Inika; font-weight: 400; line-height: 21px;">joyfullcrunch@gmail.com</div>
-          </div>
-
-          <div style="align-self: stretch; height: 26.50px; padding-bottom: 5px; padding-left: 10px; padding-right: 258.50px; justify-content: flex-start; align-items: flex-end; gap: 10.25px; display: inline-flex;">
-            <div style="width: 20.75px; height: 20px; background: #BD6B43; border-radius: 10.19px; display: inline-flex; justify-content: center; align-items: center;">
-              <div style="width: 9.14px; height: 10px; color: white; font-size: 10px; font-family: Font Awesome 5 Brands;"></div>
-            </div>
-            <div style="width: 128px; height: 21px; color: black; font-size: 14px; font-family: Inika; font-weight: 400; line-height: 21px;">@joyfull.crunch</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="width: 389px; height: 419px; left: 234px; top: 279px; position: absolute;">
-        <div style="width: 46.62px; height: 22.50px; left: 0px; top: 0px; position: absolute; color: #734128; font-size: 15px; font-family: Causten-Regular;">Nama</div>
-        <div style="width: 390px; height: 33px; padding: 6px; left: 0px; top: 33px; position: absolute; background: white; border-radius: 4px;">
-          <input type="text" placeholder="Enter name" style="width: 100%; border: none; background: none; font-family: Causten-Regular; color: #999;">
-        </div>
-
-        <div style="width: 40.99px; height: 27.50px; left: 0px; top: 75.50px; position: absolute; color: #734128; font-size: 15px; font-family: Causten-Regular;">Email</div>
-        <div style="width: 390px; height: 33px; padding: 6px; left: 0px; top: 113px; position: absolute; background: white; border-radius: 4px;">
-          <input type="email" placeholder="Enter email" style="width: 100%; border: none; background: none; font-family: Causten-Regular; color: #999;">
-        </div>
-
-        <div style="width: 45.90px; height: 27.50px; left: -1px; top: 156px; position: absolute; color: #734128; font-size: 15px; font-family: Causten-Regular;">Pesan</div>
-        <div style="width: 390px; height: 74px; left: 0px; top: 193px; position: absolute; background: white; border-radius: 4px; border: 1px #999999 solid;"></div>
-        <div style="width: 117px; height: 32px; left: 273px; top: 294px; position: absolute; background: #BD6B43; border-radius: 5px;"></div>
-        <div style="width: 117px; left: 273px; top: 300px; position: absolute; text-align: center; color: black; font-size: 15px; font-family: Inika;">Kirim</div>
-      </div>
-      <div style="width: 252px; height: 0px; left: 594px; top: 169.50px; position: absolute; border: 1px black solid;"></div>
 </body>

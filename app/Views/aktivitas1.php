@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <title>produk</title>
-      <!-- Meta Tags -->
-      <meta name="title" content="Produk">
-      <meta name="description" content="Jelajahi koleksi produk Joyfullcrunch yang menawarkan berbagai cookie lezat dan renyah. Dari rasa klasik seperti cokelat chip hingga kombinasi inovatif, setiap cookie dibuat dengan bahan berkualitas tinggi untuk memuaskan selera Anda.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Aktivitas</title>
+    <!-- Meta Tags -->
+    <meta name="title" content="Aktivitas">
+    <meta name="description" content="Ikuti aktivitas menarik di Joyfullcrunch! Bergabunglah dalam acara dan workshop kami untuk belajar membuat cookie, mencicipi produk baru, dan merayakan momen spesial bersama komunitas pecinta cookie.">
 
-      <!-- Canonical Tag -->
-      <link rel="canonical" href="<?= current_url()?>">
-
-  <style>
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="<?= current_url()?>"></style>
+        <style>
           body, html {
                 margin: 0;
                 padding: 0;
@@ -186,6 +185,85 @@
                     display: flex; /* Tampilkan ikon hamburger pada layar kecil */
                 }
             }
+
+            .Frame273 {
+                width: 100%;
+                max-width: 1440px;
+                padding: 68px 20px;
+                background: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+            }
+
+            .Group29 {
+                width: 100%;
+                max-width: 1116px;
+                background: #F3F3F3;
+                padding: 40px;
+                border-radius: 12px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 40px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                /* Use row-reverse to flip image and text */
+                flex-direction: row-reverse;
+            }
+
+
+            .CookieClassImage img {
+                width: 300px;
+                height: 350px;
+                border-radius: 20px;
+                position: relative;
+                top: 60px; /* Adjust this value to move the image down */
+                left: 40px; /* Adjust this value to move the image to the right */
+            }
+
+
+            .CookieClassText {
+                max-width: 644px;
+                position: relative;
+                left: -20px; /* Adjust this value to move the text more to the left */
+            }
+
+            .CookieClass {
+                color: #734128;
+                font-size: 36px;
+                font-family: Inika, serif;
+                font-weight: 700;
+                margin-bottom: 20px;
+                text-align: left;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add text shadow */
+            }
+
+            .CookieClassDescription {
+                color: #333;
+                font-size: 16px;
+                font-family: 'Inika', serif;
+                line-height: 1.6;
+                text-align: justify;
+            }
+
+            /* Media Queries for Responsiveness */
+            @media (max-width: 768px) {
+                .Group29 {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .CookieClassImage img {
+                    max-width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .CookieClassText {
+                    max-width: 100%;
+                }
+            }
           </style>
           <script>
               function toggleLanguageMenu() {
@@ -237,12 +315,12 @@
       <!-- Navigation Container -->
       <div class="nav-container">
           <div class="nav-links">
-            <a href="<?= base_url('/') ?>">Beranda</a>
-            <a href="<?= base_url('tentang') ?>">Tentang</a>
-            <a href="<?= base_url('artikel') ?>">Artikel</a>
-            <a href="<?= base_url('produk') ?>" class="active">Produk</a>
-            <a href="<?= base_url('aktivitas') ?>">Aktivitas</a>
-            <a href="<?= base_url('kontak') ?>">Kontak</a>
+          <a href="<?= base_url('/') ?>">Beranda</a>
+              <a href="<?= base_url('tentang') ?>">Tentang</a>
+              <a href="<?= base_url('artikel') ?>">Artikel</a>
+              <a href="<?= base_url('produk') ?>">Produk</a>
+              <a href="<?= base_url('aktivitas') ?>" class="active">Aktivitas</a>
+              <a href="<?= base_url('kontak') ?>">Kontak</a>
 
               <!-- Language Selector (pindah ke dalam .nav-links) -->
               <div class="language-selector">
@@ -268,40 +346,50 @@
       <!-- Teks responsif di tengah gambar -->
       <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center;">
           <div style="color: #E2CEB1; font-size: 3vw; font-family: Inika; font-weight: 700; line-height: 1.1; word-wrap: break-word;">
-              Produk Joyful Crunch
+              Aktivitas Joyful Crunch
           </div>
       </div>
   </div>
-  <div style="width: 1440px; height: 747px; position: relative; background: white">
-    <div style="height: 542px; padding-top: 38px; padding-bottom: 38px; padding-right: 60px; left: 192px; top: 86px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 136px; display: inline-flex">
-      <img style="width: 389px; height: 466px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px" alt="produk1" src="image/produk1.png" />
-      <div style="width: 544px; height: 466px; position: relative">
-        <div style="width: 544px; height: 466px; left: 0px; top: 0px; position: absolute; background: #734128; border-radius: 10px"></div>
-        <div style="width: 497px; height: 403px; left: 28px; top: 37px; position: absolute; color: #FDFCE8; font-size: 16px; font-family: Inika; font-weight: 400; word-wrap: break-word">Cookie Coklat di Joyful Crunch menyuguhkan kelezatan yang luar biasa dengan kombinasi kerenyahan di luar dan kelembutan coklat premium yang meleleh di dalam. Setiap gigitan cookies ini menawarkan rasa manis yang mendalam dan aroma panggangan yang menggugah selera, menciptakan pengalaman kuliner yang tak terlupakan. Cocok sebagai teman minum kopi di pagi hari, camilan santai di sore hari, atau penutup makan malam, Cookies Coklat ini membuat setiap momen lebih spesial dan berkesan.<br/><br/>Lebih dari sekadar camilan biasa, Cookie Coklat di Joyful Crunch juga memberikan manfaat emosional dengan setiap gigitannya. Kandungan coklat berkualitas dalam cookie ini dikenal dapat meningkatkan mood dan menghadirkan perasaan bahagia. Teksturnya yang seimbang antara renyah dan lembut tidak hanya memuaskan selera tetapi juga membantu mengurangi keinginan ngemil berlebihan. Nikmati kelezatan yang memanjakan lidah dan memberikan dorongan energi yang cepat, menjadikannya camilan ideal untuk menemani aktivitas sehari-hari atau memberikan semangat tambahan sebelum berolahraga.</div>
-      </div>
+
+    <!-- keterangan -->
+    <div class="Frame273">
+        <div class="Group29">
+            <div class="CookieClassText">
+                <div class="CookieClass">
+                    Cookie Customization
+                </div>
+                <div class="CookieClassDescription">
+                    At Joyful Crunch, the cookie classes offer a fun and engaging way to dive into the world of baking and decorating cookies. Whether you’re completely new to baking or have some experience, these classes cater to all skill levels, providing hands-on guidance and support. You’ll learn how to make a variety of cookies from scratch, exploring different flavors, textures, and techniques. Along the way, expert instructors will guide you through the process of decorating your cookies with precision and creativity, using various tools and edible decorations to create beautiful, professional-looking treats.
+                    <br /><br />
+                    Beyond learning the basics of baking and decorating, these classes are designed to inspire creativity and make the experience truly enjoyable. You’ll get to experiment with different designs, colors, and patterns, making each cookie unique. By the end of the class, participants not only take home delicious, homemade cookies but also new skills and a sense of accomplishment. Joyful Crunch ensures that every class is filled with fun, laughter, and the joy of creating something delightful from scratch, making it a perfect way to spend time with family and friends or to simply indulge in the art of baking.                
+                </div>
+            </div>
+            <div class="CookieClassImage">
+                <img class="F2f9a0b2985d97fe873e5605d301" src="image/cookieclass.png" alt="CookieClass" />
+            </div>
+        </div>
     </div>
-    <div style="width: 644px; height: 53px; left: 710px; top: 41px; position: absolute; color: #734128; font-size: 45px; font-family: Inika; font-weight: 700; word-wrap: break-word">Cookie Coklat</div>
-  </div>
-<!-- footer -->
-<div style="width: 100%; height: 90px; background: #734128; border-top: 1px rgba(255, 255, 255, 0.17) solid; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; box-sizing: border-box;">
-  <!-- Copyright -->
-  <div style="color: #FDFCE8; font-size: 11px; font-family: DM Sans; font-weight: 400; word-wrap: break-word;">
-    Copyright © 2024 Joyful Crunch, Design by Joyful Crunch
-  </div>
-  <!-- Ikon sosial media -->
-  <div style="display: flex; gap: 20px;">
-    <a href="https://www.facebook.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
-      <i class="fab fa-facebook-f" style="color: #E2CEB1; font-size: 18px;"></i>
-    </a>
-    <a href="https://www.youtube.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
-      <i class="fab fa-youtube" style="color: #E2CEB1; font-size: 18px;"></i>
-    </a>
-    <a href="https://www.twitter.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
-      <i class="fab fa-twitter" style="color: #E2CEB1; font-size: 18px;"></i>
-    </a>
-    <a href="https://www.instagram.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
-      <i class="fab fa-instagram" style="color: #E2CEB1; font-size: 18px;"></i>
-    </a>
-  </div>
+
+  <!-- footer -->
+  <div style="width: 100%; height: 90px; background: #734128; border-top: 1px rgba(255, 255, 255, 0.17) solid; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; box-sizing: border-box;">
+        <!-- Copyright -->
+        <div style="color: #FDFCE8; font-size: 11px; font-family: DM Sans; font-weight: 400; word-wrap: break-word;">
+            Copyright © 2024 Joyful Crunch, Design by Joyful Crunch
+        </div>
+        <!-- Ikon sosial media -->
+        <div style="display: flex; gap: 20px;">
+            <a href="https://www.facebook.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
+            <i class="fab fa-facebook-f" style="color: #E2CEB1; font-size: 18px;"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
+            <i class="fab fa-youtube" style="color: #E2CEB1; font-size: 18px;"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
+            <i class="fab fa-twitter" style="color: #E2CEB1; font-size: 18px;"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" style="width: 42px; height: 42px; background: none; border-radius: 50%; border: 2px solid #E2CEB1; justify-content: center; align-items: center; display: inline-flex;">
+            <i class="fab fa-instagram" style="color: #E2CEB1; font-size: 18px;"></i>
+            </a>
+        </div>
+    </div>
 </div>
-</body>

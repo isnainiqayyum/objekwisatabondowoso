@@ -5,69 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>tentang</title>
+    <!-- Meta Tags -->
+    <meta name="title" content="Tentang ">
+    <meta name="description" content="Pelajari lebih lanjut tentang Joyfullcrunch, toko cookie yang menghadirkan berbagai macam cookie lezat, dipanggang dengan bahan berkualitas tinggi. Kami berkomitmen untuk memberikan pengalaman rasa yang tak terlupakan dan menjadikan setiap momen lebih spesial.">
+
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="<?= current_url()?>">
+
         <style>
-          html, body {
-              height: 100%;
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;
-              font-family: Inika, sans-serif;
-          }
+           body, html {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Inika', serif;
+                overflow-x: hidden; /* Prevent horizontal scrolling */
+            }
 
-          /* Responsif pada ukuran layar */
-          .header {
-              width: 100%; /* Sesuaikan dengan lebar layar */
-              height: 83px;
-              background: white;
-              display: flex;
-              align-items: center;
-              padding: 0 15px;
-              box-sizing: border-box;
-              justify-content: space-between; /* Space between logo and nav elements */
-          }
+            /* Header umum */
+            .header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 75px;
+                background: white;
+                display: flex;
+                align-items: center;
+                padding: 0 15px;
+                justify-content: space-between;
+                z-index: 1000;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
 
-          .logo {
-              margin-right: 2vw;
-              margin-left: 12vw; /* Menggunakan vw agar lebih responsif */
-          }
+            /* Tambahkan jarak pada bagian atas konten agar tidak tertutup header */
+            body {
+                padding-top: 75px; /* Sesuaikan padding dengan tinggi header */
+            }
 
-          .logo img {
-              height: 60px;
-              width: auto;
-              max-width: 100%;
-          }
+            /* Logo */
+            .logo {
+                margin-right: 2vw;
+                margin-left: 10vw; /* Menggunakan vw agar lebih responsif */
+            }
 
-          /* Mengatur font umum untuk seluruh elemen */
+            .logo img {
+                height: 50px;
+                width: auto;
+                max-width: 100%;
+            }
+
+            /* Mengatur font umum untuk seluruh elemen */
             .nav-container,
             .nav-links a,
-            .language-selector .selected-language div,
-            .language-selector .language-menu div {
-                font-family: Arial, sans-serif; /* Jenis teks yang sama */
-                font-size: 16px; /* Ukuran teks yang sama */
+            .selected-language,
+            .language-menu div {
+                font-family: 'Inika', serif; /* Pastikan menggunakan font yang sama di semua elemen */
+                font-size: 18px; /* Sesuaikan ukuran font jika perlu */
                 color: black; /* Warna teks sama */
             }
 
-            /* Style untuk link navigasi */
+            /* Container navigasi */
             .nav-container {
                 display: flex;
                 align-items: center;
-                justify-content: flex-start; /* Meratakan ke kiri */
-                z-index: 10; /* Tetap di atas overlay */
             }
 
+            /* Link navigasi */
             .nav-links {
                 display: flex;
-                align-items: center;
-                margin-right: 2vw; /* Lebih fleksibel */
+                gap: 20px; /* Konsisten antar elemen */
+                margin-left: auto; /* Alignment otomatis ke kiri */
+                padding-right: 2vw; /* Tambahan spasi di kanan */
             }
 
+            /* Efek klik lingkaran coklat */
             .nav-links a {
-                font-weight: 400;
-                line-height: 24px;
+                position: relative;
+                padding: 10px 15px;
                 text-decoration: none;
-                padding: 15px;
-                display: flex;
-                align-items: center;
+                font-size: 18px;
+                color: black;
+                transition: background-color 0.3s ease, border-radius 0.3s ease;
+            }
+
+            /* Efek hover */
+            .nav-links a:hover {
+                background-color: #E2CEB1; /* Warna coklat kekuningan */
+                border-radius: 20px; /* Bentuk melingkar */
+            }
+
+            /* Active state: tetap berada di menu aktif */
+            .nav-links a.active {
+                background-color: #E2CEB1; /* Warna coklat kekuningan */
+                border-radius: 20px; /* Bentuk melingkar */
             }
 
             /* Language Selector */
@@ -75,11 +105,13 @@
                 position: relative;
                 display: flex;
                 align-items: center;
-                margin-left: -1.5vw; /* Digeser ke kiri */
-                z-index: 10; /* Tetap di atas overlay */
+                margin-left: 10px;
+                z-index: 10;
+                font-family: 'Inika', serif; /* Konsisten dengan font yang sama */
+                font-size: 18px;
             }
 
-            .language-selector .language-menu {
+            .language-menu {
                 display: none;
                 position: absolute;
                 top: 100%;
@@ -95,34 +127,160 @@
                 display: block;
             }
 
-            .language-selector .language-menu div {
+            .language-menu div {
+                font-family: 'Inika', serif; /* Konsisten dengan font yang sama */
+                font-size: 18px;
                 padding: 5px 10px;
                 cursor: pointer;
             }
-
-            .language-selector .language-menu div:hover {
+            .language-menu div:hover {
                 background: #f0f0f0;
             }
 
-            .language-selector .selected-language {
+            .selected-language {
                 display: flex;
                 align-items: center;
                 cursor: pointer;
             }
 
-            .language-selector .arrow {
+            .arrow {
                 width: 14px;
                 height: 9px;
                 background: black;
                 margin-left: 5px;
             }
+
+            /* Hamburger icon */
+            .hamburger {
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+                gap: 5px;
+            }
+
+            .hamburger div {
+                width: 25px;
+                height: 3px;
+                background-color: #391E10;
+            }
+
+            /* Responsif: Tampilkan hamburger icon pada layar kecil */
+            @media (max-width: 768px) {
+                .nav-links {
+                    display: none; /* Sembunyikan link navigasi */
+                    flex-direction: column;
+                    position: absolute;
+                    top: 75px;
+                    left: 0;
+                    width: 100%;
+                    background-color: white;
+                    padding: 20px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                .nav-links.active {
+                    display: flex; /* Tampilkan link navigasi saat icon diklik */
+                }
+
+                .hamburger {
+                    display: flex; /* Tampilkan ikon hamburger pada layar kecil */
+                }
+            }
+
+            /* Wrapper untuk konten utama */
+            .responsive-container {
+                display: flex;
+                justify-content: center; /* Pusatkan secara horizontal */
+                align-items: center; /* Pusatkan secara vertikal */
+                padding: 20px;
+                background-color: #FFFFFF; /* Warna latar belakang */
+                margin-top: 50px; /* Tambahkan jarak di atas */
+                margin-bottom: 70px; /* Tambahkan jarak di bawah */
+            }
+
+                .content-wrapper {
+                    display: flex;
+                    flex-direction: row; /* Atur gambar dan teks bersebelahan */
+                    align-items: center;
+                    gap: 40px; /* Jarak antara gambar dan teks */
+                    max-width: 1000px; /* Lebar maksimal konten */
+                    width: 100%;
+                }
+
+                /* Gambar logo */
+                .logo-wrapper img {
+                    max-width: 300px; /* Sesuaikan lebar gambar */
+                    height: auto;
+                }
+
+                /* Teks container */
+                .text-container {
+                    flex: 1; /* Biarkan teks mengambil sisa ruang */
+                    text-align: left;
+                    padding: 0 20px;
+                }
+
+                .title {
+                    font-size: 3vw;
+                    font-family: 'Inika', serif;
+                    font-weight: 1000;
+                    color: #391E10;
+                    margin-bottom: 20px; /* Menambahkan jarak bawah pada judul */
+                }
+
+                .description {
+                    font-size: 1vw;
+                    font-family: 'Ponnala', sans-serif;
+                    color: #391E10;
+                    line-height: 1.5;
+                    margin-top: 30px; /* Menambahkan jarak atas pada deskripsi */
+                }
+
+                /* Responsif untuk layar kecil */
+                @media (max-width: 768px) {
+                    .content-wrapper {
+                        flex-direction: column; /* Ubah menjadi kolom di layar kecil */
+                        text-align: center;
+                    }
+
+                    .title {
+                        font-size: 4vw; /* Perbesar judul */
+                    }
+
+                    .description {
+                        font-size: 3vw; /* Perbesar teks deskripsi */
+                    }
+
+                    .logo-wrapper img {
+                        max-width: 200px; /* Sesuaikan ukuran gambar pada layar kecil */
+                    }
+                }
+
+                /* Responsiveness & Improvements */
+                @media (max-width: 1200px) {
+                    .logo {
+                        margin-left: 5vw; /* Kurangi margin kiri */
+                    }
+
+                    .nav-links {
+                        padding-right: 1vw; /* Kurangi padding kanan */
+                        gap: 15px; /* Kurangi jarak antara link */
+                    }
+
+                    .language-selector {
+                        margin-left: 5px; /* Kurangi jarak untuk menyesuaikan layar lebih kecil */
+                    }
+                }
           </style>
           <script>
               function toggleLanguageMenu() {
-                  const languageSelector = document.querySelector('.language-selector');
-                  languageSelector.classList.toggle('active');
+                  var languageMenu = document.querySelector('.language-selector');
+                  languageMenu.classList.toggle('active');
               }
-
+              function toggleNav() {
+                  var navLinks = document.querySelector('.nav-links');
+                  navLinks.classList.toggle('active');
+              }
               function changeLanguage(language) {
                   alert(`Language changed to ${language}`);
                   // Add code here to actually change the language, if applicable
@@ -148,60 +306,78 @@
           </script>
 </head>
 <body>
-    <!-- Header with navigation -->
-    <div class="header">
-          <!-- Logo -->
-          <div class="logo">
-              <img src="image/logo.png" alt="Logo">
-          </div>
-
-          <!-- Navigation Container -->
-          <div class="nav-container">
-              <div class="nav-links">
-                  <a href="#">Home</a>
-                  <a href="#">About</a>
-                  <a href="#">Blog</a>
-                  <a href="#">Products</a>
-                  <a href="#">Activities</a>
-                  <a href="#">Contact</a>
-              </div>
-
-              <!-- Language Selector -->
-              <div class="language-selector">
-                  <div class="selected-language" onclick="toggleLanguageMenu()">
-                      <div>Language</div>
-                      <div class="arrow"></div>
-                  </div>
-                  <div class="language-menu">
-                      <div onclick="changeLanguage('English')">English</div>
-                      <div onclick="changeLanguage('Indonesia')">Indonesia</div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div style="position: relative; width: 100%; height: 30vh;"> <!-- Mengatur tinggi dengan vh -->
-        <!-- Gambar responsif -->
-        <img src="image/tentang.png" style="width: 100%; height: 100%; object-fit: cover; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);" />
-
-        <!-- Overlay untuk gambar -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.50);"></div>
-
-        <!-- Teks responsif di tengah gambar -->
-        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center;">
-          <div style="color: #E2CEB1; font-size: 3vw; font-family: Inika; font-weight: 700; line-height: 1.1; word-wrap: break-word;">
-            Tentang Kami
-          </div>
-        </div>
-      </div>
-  <div style="position: relative; width: 100%; height: 759px;">
-    <div style="width: 294px; height: 160px; left: 235px; top: 279px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-      <div style="width: 294px; height: 226.36px; justify-content: center; align-items: center; display: inline-flex">
-        <img style="width: 294px; height: 226.36px" src="image/logomaskot.png" />
-      </div>
+<div class="header">
+    <!-- Logo -->
+    <div class="logo">
+        <img src="image/logo.png" alt="Logo">
     </div>
-    <div style="width: 578px; height: 29.23px; left: 650px; top: 136px; position: absolute; color: #391E10; font-size: 40px; font-family: Inika; font-weight: 700; line-height: 10px; word-wrap: break-word">Joyfull Crunch</div>
-    <div style="width: 700px; height: 467px; left: 650px; top: 188px; position: absolute; color: #734128; font-size: 20px; font-family: Inika; font-weight: 400; line-height: 30px; word-wrap: break-word">Di Joyful Crunch, kami percaya bahwa kebahagiaan sejati dimulai dari gigitan pertama cookies yang sempurna. Terinspirasi oleh maskot ceria kami, Cookie, setiap cookies kami dibuat dengan penuh cinta menggunakan bahan-bahan berkualitas tinggi. Dengan kombinasi resep tradisional dan inovasi modern, kami menciptakan cookies yang menghadirkan kelezatan dalam setiap gigitan, mulai dari tekstur renyah hingga aroma yang menggugah selera.<br/><br/>Cookies kami lebih dari sekadar camilan manis; mereka adalah bagian dari momen spesial Anda, dari merayakan keberhasilan kecil hingga menghangatkan kebersamaan. Di Joyful Crunch, kami percaya bahwa setiap gigitan adalah perayaan rasa yang menyatukan dan menciptakan kenangan indah. Mari bergabung dengan kami dan rasakan sendiri bagaimana cookies kami dapat membawa kebahagiaan dan keceriaan ke dalam hidup Anda.</div>
-  </div>
+
+    <!-- Hamburger Icon (hanya muncul di mobile) -->
+    <div class="hamburger" onclick="toggleNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Navigation Container -->
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="<?= base_url('/') ?>">Beranda</a>
+            <a href="<?= base_url('tentang') ?>" class="active">Tentang</a>
+            <a href="<?= base_url('artikel') ?>">Artikel</a>
+            <a href="<?= base_url('produk') ?>">Produk</a>
+            <a href="<?= base_url('aktivitas') ?>">Aktivitas</a>
+            <a href="<?= base_url('kontak') ?>">Kontak</a>
+
+            <!-- Language Selector (pindah ke dalam .nav-links) -->
+            <div class="language-selector">
+                <div class="selected-language" onclick="toggleLanguageMenu()">
+                    <div>Bahasa</div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="language-menu">
+                    <div onclick="changeLanguage('English')">English</div>
+                    <div onclick="changeLanguage('Indonesia')">Indonesia</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="position: relative; width: 100%; height: 30vh; margin-bottom: 0;"> 
+    <!-- Gambar responsif -->
+    <img alt="tentang" src="image/tentang.png" style="width: 100%; height: 100%; object-fit: cover; margin-bottom: 0; padding: 0; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);" /> 
+
+    <!-- Overlay untuk gambar -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.50);"></div>
+
+    <!-- Teks responsif di tengah gambar -->
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center;">
+        <div style="color: #E2CEB1; font-size: 3vw; font-family: Inika; font-weight: 700; line-height: 1.1; word-wrap: break-word;">
+            Tentang Kami
+        </div>
+    </div>
+</div>
+
+<div class="responsive-container">
+    <div class="content-wrapper">
+        <div class="logo-container">
+            <div class="logo-wrapper">
+                <img src="image/logomaskot.png" alt="Joyfull Crunch Logo" />
+            </div>
+        </div>
+        <div class="text-container">
+            <div class="title">Joyful Crunch</div>
+            <div class="description">
+                Di Joyful Crunch, kami percaya bahwa kebahagiaan dimulai dengan kue yang sempurna. Terinspirasi dari maskot kami yang ceria, Cookie, kami membuat setiap biskuit dengan penuh cinta dan bahan-bahan berkualitas tinggi. Misi kami adalah untuk menghadirkan kegembiraan di setiap momen, satu kue pada satu waktu.                
+                <br /><br />
+                Resep unik kami memadukan cita rasa tradisional dengan sentuhan modern, menghasilkan kue kering yang renyah di luar dan lembut di dalam. Setiap gigitannya adalah perayaan momen-momen spesial dalam hidup, baik saat Anda berbagi dengan teman, menikmati malam yang nyaman di rumah, atau memanjakan diri sendiri setelah seharian beraktivitas. Kami ingin kue kering kami membangkitkan kegembiraan dan nostalgia, menciptakan kenangan abadi dengan setiap rasa.
+                <br /><br />
+                Kami juga berkomitmen terhadap keberlanjutan, mencari sumber bahan baku secara bertanggung jawab untuk memberikan dampak positif bagi masyarakat dan lingkungan. Di Joyful Crunch, kami percaya bahwa kue kering yang lezat dapat dihasilkan dari praktik-praktik yang baik. Bergabunglah bersama kami dalam perjalanan lezat ini dan temukan bagaimana kue-kue kami dapat memberikan sedikit kegembiraan dalam hidup Anda!
+            </div>
+        </div>
+    </div>
+</div>
+
 
   <!-- footer -->
     <div style="width: 100%; height: 90px; background: #734128; border-top: 1px rgba(255, 255, 255, 0.17) solid; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; box-sizing: border-box;">

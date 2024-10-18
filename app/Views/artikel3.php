@@ -286,10 +286,28 @@
                         7 Agustus 2014
                     </div>
                     <div style="color: #734128; font-size: 3.5vw; font-family: Inika; font-weight: 700; margin-bottom: 30px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
-                        Panduan Memulai Bisnis Cookies dari Rumah
+                        Resep Cookies Sukses: Bahan dan Teknik Penting
                     </div>
                     <div style="color: #734128; font-size: 1.11vw; font-family: Inika; font-weight: 400;">
-                        Mulai bisnis cookies dari rumah dengan panduan langkah demi langkah ini, dan bayangkan dapur Anda dipenuhi aroma manis dari cookies yang baru saja dipanggang. Setiap gigitan membawa senyum di wajah pelanggan, dan memulai bisnis cookies dari rumah bisa menjadi awal dari perjalanan sukses yang penuh kelezatan. Artikel ini akan membantu Anda memulainya dengan cara yang sederhana namun efektif.<br/><br/>1. Temukan Keunikan Brand Anda<br/>Identifikasi apa yang membuat cookies Anda berbeda dari yang lain—apakah itu bahan-bahan organik, resep turun-temurun, atau bentuk cookies yang kreatif dan menarik. Keunikan ini akan menjadi daya tarik utama yang membuat pelanggan penasaran dan ingin mencoba produk Anda.<br/><br/>2. Siapkan Dapur Anda<br/>Pastikan dapur Anda siap untuk produksi cookies dalam jumlah yang cukup. Anda tidak perlu peralatan mahal, tapi penting untuk memiliki peralatan dasar seperti oven dan mixer yang berkualitas. Dapur yang terorganisir dan bersih akan memudahkan proses produksi dan memastikan kualitas cookies tetap konsisten.<br/><br/>3. Kreasikan Resep yang Memikat<br/>Ciptakan resep cookies yang unik dan lezat, yang bisa membuat pelanggan kembali lagi. Bereksperimenlah dengan berbagai bahan dan rasa untuk menemukan kombinasi yang sempurna, dan pastikan cookies Anda menawarkan keseimbangan antara tekstur yang renyah dan rasa yang menggugah selera.<br/><br/>4. Manfaatkan Kekuatan Media Sosial<br/>Manfaatkan media sosial untuk memperkenalkan produk Anda kepada pasar yang lebih luas. Buat akun Instagram atau Facebook yang menarik, unggah foto-foto cookies yang menggugah selera, dan gunakan cerita serta testimoni pelanggan untuk meningkatkan kepercayaan dan menarik lebih banyak pembeli.<br/><br/>5. Kelola Keuangan dengan Bijak<br/>Pengelolaan keuangan yang tepat sangat penting untuk kesuksesan bisnis. Hitung semua biaya produksi secara detail dan tetapkan harga jual yang menguntungkan namun tetap kompetitif. Pastikan juga untuk mengatur arus kas dengan baik, sehingga bisnis Anda dapat tumbuh dan berkembang.<br/><br/>Dengan sedikit kreativitas dan perencanaan, Anda bisa mengubah hasrat memanggang cookies menjadi bisnis yang menguntungkan. Jadikan setiap batch cookies Anda istimewa, dan biarkan pelanggan menikmati hasil kerja keras Anda. Selamat memulai perjalanan manis ini!
+                    Ingin tahu rahasia cookies yang selalu enak? Pelajari cara memilih bahan terbaik dan teknik memanggang yang bisa membuat perbedaan besar! Dengan memahami bahan-bahan utama dan cara mengolahnya, Anda bisa menciptakan cookies yang renyah di luar namun lembut di dalam, penuh rasa, dan selalu membuat ketagihan. Mari kita lihat beberapa hal penting yang perlu diperhatikan saat membuat cookies.<br><br>
+
+                    1. Pilih Bahan Berkualitas<br>
+                    Untuk mendapatkan cookies yang lezat, bahan berkualitas adalah kuncinya. Mulai dari tepung, mentega, hingga gula, setiap bahan memainkan peran penting dalam menentukan tekstur dan rasa akhir dari cookies Anda. Gunakan bahan-bahan segar dan berkualitas tinggi agar cookies Anda memiliki rasa yang otentik dan memuaskan.<br><br>
+
+                    2. Mengukur Bahan dengan Tepat<br>
+                    Ukuran yang tepat adalah rahasia kesuksesan dalam membuat cookies. Jangan terburu-buru saat mengukur bahan, karena sedikit saja perbedaan bisa berdampak besar pada hasil akhir. Gunakan alat ukur yang benar, dan pastikan Anda mengikuti takaran yang ada di resep dengan teliti.<br><br>
+
+                    3. Teknik Mencampur Adonan<br>
+                    Teknik mencampur bahan juga memengaruhi tekstur cookies. Pastikan mentega dan gula dikocok hingga lembut dan berwarna cerah. Ini membantu menciptakan tekstur yang ringan dan renyah. Namun, jangan terlalu lama mengaduk adonan setelah menambahkan tepung, karena ini bisa membuat cookies menjadi keras.<br><br>
+
+                    4. Pengaturan Suhu dan Waktu Panggang<br>
+                    Panggang cookies pada suhu yang tepat sesuai resep. Jika suhu oven terlalu rendah, cookies akan menyebar terlalu banyak dan tidak matang dengan baik. Sebaliknya, jika suhu terlalu tinggi, bagian luar akan cepat gosong sementara bagian dalam masih mentah. Selalu panaskan oven terlebih dahulu, dan perhatikan waktu memanggang dengan seksama.<br><br>
+
+                    5. Tips Tambahan untuk Hasil Sempurna<br>
+                    Dinginkan Adonan: Untuk cookies yang lebih tebal dan tidak menyebar terlalu banyak, masukkan adonan ke dalam kulkas selama 30 menit sebelum dipanggang.<br>
+                    Gunakan Kertas Roti atau Silpat: Ini akan mencegah cookies lengket di baking sheet, dan juga membantu mereka matang dengan merata.<br>
+                    Eksperimen dengan Tambahan: Cobalah variasikan rasa dengan menambahkan kacang, cokelat, atau buah-buahan kering. Ini bisa memberikan twist menarik pada cookies klasik Anda.<br><br>
+                    Dengan memperhatikan hal-hal ini, Anda bisa membuat cookies yang sempurna setiap saat. Cookies yang dibuat dengan penuh cinta dan perhatian pada detail selalu terasa lebih lezat! Selamat memanggang, dan semoga cookies Anda selalu jadi favorit banyak orang!
                     </div>
                 </div>
             </div>
@@ -304,16 +322,16 @@
             </div>
             <div style="border: 0.21vw #391E10 solid; margin: 20px 0;"></div>
 
-            <!-- Artikel 2 -->
+            <!-- Artikel 1 -->
             <a href="artikel2.html" style="text-decoration: none;">
                 <div style="box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); border: 0.07vw #734128 solid; padding: 10px; margin-bottom: 20px; max-width: 100%; display: flex; align-items: center;">
-                    <img style="width: 40%; height: auto; margin-right: 10px;" src="image/artikel2.png" />
+                    <img style="width: 40%; height: auto; margin-right: 10px;" src="image/artikel1.png" />
                     <div style="flex-grow: 1;">
                         <div style="color: #734128; font-size: 0.97vw; font-family: Inika; margin-bottom: 5px;">
-                            20 Agustus 2024
+                            7 Agustus 2024
                         </div>
                         <div style="color: #734128; font-size: 1.11vw; font-family: Inika;">
-                            "Resep Cookies Sukses...
+                            "Panduan Memulai Bisnis...
                         </div>
                     </div>
                 </div>   
