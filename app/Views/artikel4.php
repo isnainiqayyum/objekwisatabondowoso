@@ -280,52 +280,62 @@
         <!-- Artikel -->
         <div style="display: flex; justify-content: center; margin-left: 7%;">
             <div style="max-width: 100%; border: 0.35vw #734128 solid; background-color: white; box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25);">
-                <img style="width: 100%; height: auto; border-bottom: 0.35vw #734128 solid;" alt="artikel1" src="image/artikel3.3.png" />
+                <img style="width: 100%; height: auto; border-bottom: 0.35vw #734128 solid;" alt="artikel1" src="image/artikel4.4.png" />
                 <div style="padding: 20px;">
                     <div style="color: #734128; font-size: 0.97vw; font-family: Inika; font-weight: 400; margin-bottom: 20px;">
                         7 Agustus 2014
                     </div>
                     <div style="color: #734128; font-size: 3.5vw; font-family: Inika; font-weight: 700; margin-bottom: 30px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
-                        Inovasi Rasa Cookies yang Memikat Pelanggan
+                        Media Sosial untuk Mengembangkan Bisnis Cookies
                     </div>
                     <div style="color: #734128; font-size: 1.11vw; font-family: Inika; font-weight: 400;">
-                    Buat cookies Anda beda dari yang lain! Jelajahi ide rasa baru yang bisa menarik perhatian dan selera pelanggan. Dalam dunia kuliner yang terus berkembang, inovasi adalah kunci untuk memenangkan hati para konsumen. Cobalah berbagai kombinasi rasa yang unik untuk menciptakan pengalaman rasa yang baru dan menarik. Berikut adalah beberapa ide dan tips untuk menciptakan rasa cookies yang memikat pelanggan:<br><br>
+                    Optimalkan media sosial untuk memperluas jangkauan bisnis cookies Anda. Di era digital ini, media sosial adalah alat yang sangat efektif untuk mempromosikan produk dan menarik lebih banyak pelanggan. Dengan strategi yang tepat, Anda dapat meningkatkan kesadaran merek, membangun hubungan dengan pelanggan, dan akhirnya meningkatkan penjualan. Berikut adalah beberapa tips untuk memaksimalkan media sosial dalam mengembangkan bisnis cookies Anda:<br><br>
 
-                <strong> 1. Kombinasi Rasa yang Tidak Biasa</strong><br>
-                    Jangan takut untuk bereksperimen dengan bahan-bahan yang mungkin tidak biasa ditemukan dalam cookies. Kombinasikan rasa yang kontras untuk menciptakan kejutan di setiap gigitan. Misalnya:<br>
+                    <strong>1. Pilih Platform yang Tepat</strong><br>
+                    Setiap platform media sosial memiliki karakteristik dan audiens yang berbeda. Pilih platform yang sesuai dengan target pasar Anda untuk mendapatkan hasil yang maksimal:<br>
 
-                    Matcha & Kelapa: Matcha yang memiliki rasa earthy berpadu dengan manisnya kelapa kering untuk memberikan rasa tropis yang unik.<br>
-                    Jahe & Lemon: Kombinasi segar antara jahe pedas dan lemon asam manis memberikan rasa yang cerah dan menghangatkan.<br>
-                    Cokelat & Cabai: Tambahkan sedikit cabai pada cookies cokelat untuk sentuhan pedas yang tak terduga. Perpaduan manis dan pedas ini bisa menjadi favorit baru bagi pelanggan yang menyukai rasa unik.<br><br>
+                    Instagram: Ideal untuk bisnis makanan karena fokus pada visual. Anda bisa memamerkan foto dan video cookies yang menggugah selera, serta menggunakan fitur Stories dan Reels untuk menjangkau audiens lebih luas.<br>
+                    Facebook: Platform yang bagus untuk menjangkau berbagai kelompok umur. Manfaatkan fitur marketplace, grup, dan iklan berbayar untuk meningkatkan jangkauan bisnis Anda.<br>
+                    TikTok: Menarik untuk generasi muda dan cocok untuk berbagi video pendek yang kreatif dan menyenangkan. Gunakan TikTok untuk memamerkan proses pembuatan cookies atau mengajak pelanggan untuk ikut dalam tantangan menarik.<br>
+                    Pinterest: Platform ini dapat digunakan untuk berbagi foto cookies yang estetis, resep, dan ide dekorasi cookies. Sangat cocok untuk menarik mereka yang suka mencoba resep baru di rumah.<br><br>
+                   
+                   <strong>2. Buat Konten yang Menarik dan Interaktif</strong><br>
+                    Konten yang menarik adalah kunci untuk membangun keterlibatan di media sosial. Berikut beberapa ide konten yang bisa Anda coba:<br>
+
+                    Foto dan Video Cookies: Ambil gambar berkualitas tinggi dari produk Anda. Gunakan pencahayaan yang baik dan latar belakang yang menarik untuk menonjolkan detail cookies Anda.<br>
+                    Behind-the-Scenes: Bagikan video atau foto di balik layar pembuatan cookies Anda. Ini akan membantu membangun koneksi personal dengan pelanggan, karena mereka dapat melihat proses produksi dan dedikasi di balik produk.<br>
+                    Resep dan Tips: Berikan nilai lebih kepada pelanggan dengan berbagi resep cookies sederhana atau tips memanggang. Ini dapat membantu meningkatkan kredibilitas merek Anda sebagai ahli dalam bidang cookies.<br>
+                    Kuis dan Giveaway: Buat kuis atau giveaway kecil-kecilan untuk meningkatkan interaksi. Misalnya, minta pelanggan menebak rasa baru cookies atau mengikuti kuis dengan hadiah cookies gratis.<br><br>
+                   
+                    <strong>3. Gunakan Hashtag yang Relevan</strong><br>
+                    Hashtag membantu konten Anda ditemukan oleh orang-orang yang belum mengikuti akun Anda. Buatlah kombinasi antara hashtag umum dan spesifik yang relevan dengan bisnis Anda, seperti:<br>
+
+                    #CookiesLezat<br>
+                    #CookiesHomemade<br>
+                    #CookiesBandung (atau kota Anda)<br>
+                    #BakingLove<br>
+                    #SweetTreats<br><br> Juga, pertimbangkan untuk membuat hashtag khusus merek yang dapat digunakan pelanggan saat mereka memposting tentang produk Anda. Ini akan membantu membangun komunitas di sekitar merek Anda.<br><br>
                     
-                <strong> 2. Manfaatkan Bahan Lokal</strong><br>
-                    Menciptakan rasa cookies yang memanfaatkan bahan-bahan lokal tidak hanya memberikan cita rasa khas, tetapi juga bisa menjadi daya tarik utama untuk pelanggan yang ingin merasakan sesuatu yang autentik. Beberapa contoh ide rasa lokal yang bisa dicoba:<br>
+                    <strong>4. Manfaatkan Influencer Marketing</strong><br>
+                    Bermitra dengan influencer di media sosial bisa menjadi cara efektif untuk menjangkau audiens baru. Cari influencer yang sesuai dengan citra merek Anda, dan ajak mereka untuk mempromosikan cookies Anda. Anda bisa mengirimkan produk untuk mereka coba dan minta mereka membagikan ulasan yang jujur di akun mereka.<br>
 
-                    Pandan & Kacang Kenari: Aroma pandan yang harum dan manis cocok dipadukan dengan kacang kenari yang kaya rasa.<br>
-                    Kopi & Kacang Tanah: Gunakan kopi lokal yang khas sebagai bahan utama dan tambahkan kacang tanah untuk memberikan rasa yang kuat dan renyah.<br>
-                    Gula Aren & Pisang: Manis alami dari gula aren berpadu dengan rasa pisang matang menciptakan cookies yang lembut dan penuh aroma.<br><br>
+                    Food Blogger: Kolaborasi dengan food blogger bisa memberikan ulasan mendetail tentang produk Anda.<br>
+                    Content Creator: Ajak content creator untuk membuat konten kreatif yang menampilkan cookies Anda, seperti mukbang atau video ASMR.<br><br>
                     
-                <strong> 3. Variasi Tekstur yang Menarik</strong><br>
-                    Selain rasa, tekstur juga memainkan peran penting dalam pengalaman makan cookies. Cobalah tambahkan bahan-bahan yang memberikan tekstur berbeda, seperti:<br>
+                    <strong>5. Adakan Promosi Khusus dan Diskon</strong><br>
+                    Berikan alasan kepada orang-orang untuk mencoba cookies Anda dengan menawarkan promosi khusus atau diskon melalui media sosial. Ini bisa berupa:<br>
 
-                    Karamel & Pretzel: Kombinasi karamel yang lembut dan pretzel yang renyah menciptakan perpaduan tekstur yang menyenangkan.<br>
-                    Kismis & Granola: Tambahkan granola untuk memberikan sentuhan renyah pada cookies kismis tradisional.<br>
-                    Kepingan Cokelat & Selai Kacang Crunchy: Gunakan selai kacang dengan potongan kacang untuk menambahkan tekstur ekstra pada cookies cokelat.<br><br>
+                    Diskon Khusus Follower Baru: Berikan diskon bagi mereka yang baru pertama kali mengikuti akun Anda.<br>
+                    Kode Promo Musiman: Buat kode promo berdasarkan musim atau acara tertentu, seperti "DISKONLEBARAN" untuk Idul Fitri.<br>
+                    Penawaran Waktu Terbatas: Berikan penawaran terbatas selama satu atau dua hari untuk mendorong orang segera melakukan pembelian.<br><br>
                     
-                <strong> 4. Menggabungkan Rasa Internasional</strong><br>
-                    Inspirasi rasa dari seluruh dunia bisa menjadi inovasi menarik untuk cookies Anda. Cobalah memadukan rasa dari berbagai budaya kuliner yang populer:<br>
+                    <strong>6. Jadwal Posting yang Konsisten</strong><br>
+                    Konsistensi adalah kunci di media sosial. Buat jadwal posting yang teratur, baik itu harian, mingguan, atau bulanan, dan pastikan Anda terus berinteraksi dengan pengikut Anda. Gunakan alat seperti Hootsuite atau Buffer untuk menjadwalkan postingan agar tetap konsisten tanpa harus menghabiskan banyak waktu setiap hari.<br><br>
 
-                    Green Tea & Red Bean (Jepang): Perpaduan green tea dengan pasta kacang merah memberikan rasa yang unik dan berani.<br>
-                    Churro Cinnamon & Chocolate (Meksiko): Rasa kayu manis khas churro dipadukan dengan cokelat untuk memberikan rasa yang hangat dan menggugah selera.<br>
-                    Lemon & Lavender (Prancis): Perpaduan aroma lavender yang lembut dengan asam segar lemon menciptakan rasa cookies yang elegan dan menenangkan.<br><br>
-                    
-                <strong> 5. Mengembangkan Cookies Khusus Musiman</strong><br>
-                    Buatlah cookies yang hanya tersedia pada waktu-waktu tertentu untuk menciptakan kesan eksklusif dan meningkatkan minat pelanggan. Misalnya:<br>
+                    <strong>7. Analisis dan Evaluasi Strategi Anda</strong><br>
+                    Terakhir, selalu pantau dan evaluasi performa media sosial Anda. Perhatikan metrik seperti jumlah like, komentar, dan share untuk mengetahui jenis konten apa yang paling disukai oleh audiens. Gunakan data tersebut untuk memperbaiki strategi pemasaran Anda ke depannya.<br><br>
 
-                    Pumpkin Spice untuk Musim Gugur: Campuran kayu manis, pala, dan jahe dengan labu menciptakan cookies khas musim gugur yang hangat.<br>
-                    Mint Chocolate untuk Musim Liburan: Kombinasi rasa mint segar dan cokelat lezat cocok untuk merayakan suasana musim liburan.<br>
-                    Cookies Mangga untuk Musim Panas: Rasa manis dan segar dari mangga menjadi pilihan sempurna untuk cookies musim panas yang menyegarkan.<br><br>
-                    Inovasi rasa adalah cara terbaik untuk menarik perhatian pelanggan dan membuat cookies Anda menonjol di pasar yang kompetitif. Dengan terus bereksperimen dan mencoba kombinasi rasa baru, Anda bisa menemukan formula yang membuat pelanggan selalu kembali untuk menikmati cookies buatan Anda. Jangan ragu untuk menggabungkan rasa yang tidak biasa, dan selamat bereksperimen!
+                    Dengan mengoptimalkan media sosial, Anda bisa memperluas jangkauan bisnis cookies Anda secara signifikan. Tidak hanya menarik pelanggan baru, tetapi juga membangun hubungan yang lebih kuat dengan pelanggan setia. Selamat mencoba, dan semoga bisnis cookies Anda semakin sukses!
                     </div>
                 </div>
             </div>
@@ -370,16 +380,16 @@
                 </div>   
             </a>
 
-            <!-- Artikel 4 -->
-            <a href="artikel4.html" style="text-decoration: none;">
+            <!-- Artikel 3 -->
+            <a href="artikel3.html" style="text-decoration: none;">
                 <div style="box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); border: 0.07vw #734128 solid; padding: 10px; margin-bottom: 20px; max-width: 100%; display: flex; align-items: center;">
-                    <img style="width: 40%; height: auto; margin-right: 10px;" src="image/artikel4.png" />
+                    <img style="width: 40%; height: auto; margin-right: 10px;" alt="artikel3" src="image/artikel3.png" />
                     <div style="flex-grow: 1;">
                         <div style="color: #734128; font-size: 0.97vw; font-family: Inika; margin-bottom: 5px;">
-                            26 Agustus 2024
+                            24 Agustus 2024
                         </div>
                         <div style="color: #734128; font-size: 1.11vw; font-family: Inika;">
-                            "Media Sosial untuk...
+                            "Inovasi Rasa Cookies...
                         </div>
                     </div>
                 </div>   

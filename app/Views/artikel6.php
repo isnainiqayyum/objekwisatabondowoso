@@ -280,52 +280,58 @@
         <!-- Artikel -->
         <div style="display: flex; justify-content: center; margin-left: 7%;">
             <div style="max-width: 100%; border: 0.35vw #734128 solid; background-color: white; box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25);">
-                <img style="width: 100%; height: auto; border-bottom: 0.35vw #734128 solid;" alt="artikel1" src="image/artikel3.3.png" />
+                <img style="width: 100%; height: auto; border-bottom: 0.35vw #734128 solid;" alt="artikel1" src="image/artikel6.6.png" />
                 <div style="padding: 20px;">
                     <div style="color: #734128; font-size: 0.97vw; font-family: Inika; font-weight: 400; margin-bottom: 20px;">
                         7 Agustus 2014
                     </div>
                     <div style="color: #734128; font-size: 3.5vw; font-family: Inika; font-weight: 700; margin-bottom: 30px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
-                        Inovasi Rasa Cookies yang Memikat Pelanggan
+                        Program Langganan: Tingkatkan Loyalitas Pelanggan
                     </div>
                     <div style="color: #734128; font-size: 1.11vw; font-family: Inika; font-weight: 400;">
-                    Buat cookies Anda beda dari yang lain! Jelajahi ide rasa baru yang bisa menarik perhatian dan selera pelanggan. Dalam dunia kuliner yang terus berkembang, inovasi adalah kunci untuk memenangkan hati para konsumen. Cobalah berbagai kombinasi rasa yang unik untuk menciptakan pengalaman rasa yang baru dan menarik. Berikut adalah beberapa ide dan tips untuk menciptakan rasa cookies yang memikat pelanggan:<br><br>
-
-                <strong> 1. Kombinasi Rasa yang Tidak Biasa</strong><br>
-                    Jangan takut untuk bereksperimen dengan bahan-bahan yang mungkin tidak biasa ditemukan dalam cookies. Kombinasikan rasa yang kontras untuk menciptakan kejutan di setiap gigitan. Misalnya:<br>
-
-                    Matcha & Kelapa: Matcha yang memiliki rasa earthy berpadu dengan manisnya kelapa kering untuk memberikan rasa tropis yang unik.<br>
-                    Jahe & Lemon: Kombinasi segar antara jahe pedas dan lemon asam manis memberikan rasa yang cerah dan menghangatkan.<br>
-                    Cokelat & Cabai: Tambahkan sedikit cabai pada cookies cokelat untuk sentuhan pedas yang tak terduga. Perpaduan manis dan pedas ini bisa menjadi favorit baru bagi pelanggan yang menyukai rasa unik.<br><br>
+                    Pelajari cara membuat pelanggan tetap setia dengan program langganan yang menawarkan nilai lebih dan keuntungan jangka panjang. Program langganan adalah strategi pemasaran yang efektif untuk meningkatkan loyalitas pelanggan dan menciptakan pendapatan berulang. Dengan menawarkan produk secara berkala dan memberikan manfaat eksklusif, Anda bisa memastikan bahwa pelanggan terus kembali untuk menikmati produk cookies Anda. Berikut adalah panduan untuk membangun program langganan yang sukses bagi bisnis cookies Anda:<br><br>
                     
-                <strong> 2. Manfaatkan Bahan Lokal</strong><br>
-                    Menciptakan rasa cookies yang memanfaatkan bahan-bahan lokal tidak hanya memberikan cita rasa khas, tetapi juga bisa menjadi daya tarik utama untuk pelanggan yang ingin merasakan sesuatu yang autentik. Beberapa contoh ide rasa lokal yang bisa dicoba:<br>
+                    <strong>1. Tentukan Jenis Program Langganan</strong><br>
+                    Ada berbagai jenis program langganan yang bisa Anda tawarkan, tergantung pada produk dan preferensi pelanggan. Beberapa pilihan populer meliputi:<br>
 
-                    Pandan & Kacang Kenari: Aroma pandan yang harum dan manis cocok dipadukan dengan kacang kenari yang kaya rasa.<br>
-                    Kopi & Kacang Tanah: Gunakan kopi lokal yang khas sebagai bahan utama dan tambahkan kacang tanah untuk memberikan rasa yang kuat dan renyah.<br>
-                    Gula Aren & Pisang: Manis alami dari gula aren berpadu dengan rasa pisang matang menciptakan cookies yang lembut dan penuh aroma.<br><br>
+                    Langganan Bulanan atau Mingguan: Pelanggan mendapatkan kiriman cookies setiap bulan atau minggu sesuai pilihan mereka. Cocok untuk mereka yang ingin menikmati cookies segar secara rutin tanpa perlu memesan ulang setiap kali.<br>
+                    Langganan Kustom: Berikan pilihan kepada pelanggan untuk memilih variasi rasa cookies yang ingin mereka terima setiap bulan. Ini memberikan fleksibilitas dan memastikan mereka mendapatkan apa yang mereka sukai.<br>
+                    Kotak Kejutan (Surprise Box): Kirimkan paket cookies dengan rasa berbeda setiap bulan sebagai kejutan. Pelanggan akan antusias untuk menantikan rasa baru yang mungkin belum pernah mereka coba sebelumnya.<br><br>
                     
-                <strong> 3. Variasi Tekstur yang Menarik</strong><br>
-                    Selain rasa, tekstur juga memainkan peran penting dalam pengalaman makan cookies. Cobalah tambahkan bahan-bahan yang memberikan tekstur berbeda, seperti:<br>
+                    <strong>2. Berikan Diskon atau Harga Khusus untuk Pelanggan Langganan</strong><br>
+                    Salah satu alasan utama pelanggan tertarik pada program langganan adalah karena nilai lebih yang ditawarkan. Dengan memberikan diskon khusus atau harga lebih rendah dibandingkan pembelian satu kali, Anda bisa menarik lebih banyak pelanggan untuk berlangganan:<br>
 
-                    Karamel & Pretzel: Kombinasi karamel yang lembut dan pretzel yang renyah menciptakan perpaduan tekstur yang menyenangkan.<br>
-                    Kismis & Granola: Tambahkan granola untuk memberikan sentuhan renyah pada cookies kismis tradisional.<br>
-                    Kepingan Cokelat & Selai Kacang Crunchy: Gunakan selai kacang dengan potongan kacang untuk menambahkan tekstur ekstra pada cookies cokelat.<br><br>
+                    Diskon Langganan: Misalnya, pelanggan yang berlangganan mendapat potongan harga 10-20% dari harga reguler.<br>
+                    Penawaran Paket (Bundle): Jika pelanggan berlangganan selama 3 atau 6 bulan sekaligus, tawarkan harga lebih murah dibandingkan langganan bulanan biasa.<br>
+                    Gratis Ongkos Kirim: Tawarkan layanan pengiriman gratis sebagai salah satu keuntungan langganan untuk menambah nilai dan kenyamanan bagi pelanggan.<br><br>
                     
-                <strong> 4. Menggabungkan Rasa Internasional</strong><br>
-                    Inspirasi rasa dari seluruh dunia bisa menjadi inovasi menarik untuk cookies Anda. Cobalah memadukan rasa dari berbagai budaya kuliner yang populer:<br>
+                    <strong>3. Manfaatkan Produk Eksklusif untuk Pelanggan Langganan</strong><br>
+                    Menawarkan produk atau rasa eksklusif yang hanya tersedia untuk pelanggan langganan dapat membuat program Anda lebih menarik. Beberapa ide meliputi:<br>
 
-                    Green Tea & Red Bean (Jepang): Perpaduan green tea dengan pasta kacang merah memberikan rasa yang unik dan berani.<br>
-                    Churro Cinnamon & Chocolate (Meksiko): Rasa kayu manis khas churro dipadukan dengan cokelat untuk memberikan rasa yang hangat dan menggugah selera.<br>
-                    Lemon & Lavender (Prancis): Perpaduan aroma lavender yang lembut dengan asam segar lemon menciptakan rasa cookies yang elegan dan menenangkan.<br><br>
+                    Rasa Musiman atau Edisi Terbatas: Perkenalkan rasa cookies baru yang hanya bisa dinikmati oleh pelanggan langganan, seperti rasa labu di musim gugur atau cokelat mint di musim liburan.<br>
+                    Kemasan Khusus: Kirimkan cookies dalam kemasan yang berbeda atau lebih premium untuk pelanggan langganan, sehingga mereka merasa mendapatkan pengalaman yang lebih istimewa.<br>
+                    Produk Tambahan Gratis: Tambahkan kejutan kecil, seperti cookies tambahan, kue kering mini, atau voucher diskon untuk pembelian berikutnya sebagai bentuk apresiasi kepada pelanggan setia.<br><br>
                     
-                <strong> 5. Mengembangkan Cookies Khusus Musiman</strong><br>
-                    Buatlah cookies yang hanya tersedia pada waktu-waktu tertentu untuk menciptakan kesan eksklusif dan meningkatkan minat pelanggan. Misalnya:<br>
+                    <strong>4. Permudah Pelanggan untuk Bergabung dan Mengelola Langganan</strong><br>
+                    Kemudahan akses sangat penting dalam memastikan program langganan Anda sukses. Buatlah sistem yang mudah digunakan agar pelanggan bisa bergabung, mengubah, atau membatalkan langganan mereka tanpa kendala:<br>
 
-                    Pumpkin Spice untuk Musim Gugur: Campuran kayu manis, pala, dan jahe dengan labu menciptakan cookies khas musim gugur yang hangat.<br>
-                    Mint Chocolate untuk Musim Liburan: Kombinasi rasa mint segar dan cokelat lezat cocok untuk merayakan suasana musim liburan.<br>
-                    Cookies Mangga untuk Musim Panas: Rasa manis dan segar dari mangga menjadi pilihan sempurna untuk cookies musim panas yang menyegarkan.<br><br>
-                    Inovasi rasa adalah cara terbaik untuk menarik perhatian pelanggan dan membuat cookies Anda menonjol di pasar yang kompetitif. Dengan terus bereksperimen dan mencoba kombinasi rasa baru, Anda bisa menemukan formula yang membuat pelanggan selalu kembali untuk menikmati cookies buatan Anda. Jangan ragu untuk menggabungkan rasa yang tidak biasa, dan selamat bereksperimen!
+                    Pendaftaran Online yang Mudah: Sediakan platform online yang memudahkan pelanggan untuk mendaftar dan memilih preferensi langganan mereka dengan cepat.<br>
+                    Pengingat Langganan: Kirimkan pengingat melalui email atau pesan teks menjelang pembaruan langganan berikutnya. Ini membantu mengurangi risiko pelanggan lupa memperpanjang langganan.<br>
+                    Fleksibilitas dalam Mengelola Langganan: Berikan pilihan kepada pelanggan untuk mengubah rasa cookies, tanggal pengiriman, atau bahkan jeda langganan jika mereka membutuhkan waktu istirahat tanpa harus membatalkan sepenuhnya.<br><br>
+                    
+                    <strong>5. Buat Program Rujukan (Referral Program) untuk Meningkatkan Pertumbuhan</strong><br>
+                    Program rujukan bisa menjadi cara efektif untuk menarik pelanggan baru. Berikan insentif kepada pelanggan setia yang berhasil mengajak teman atau keluarga mereka untuk bergabung dalam program langganan:<br>
+
+                    Diskon untuk Rujukan: Berikan potongan harga bagi pelanggan yang berhasil mengajak teman mereka untuk berlangganan, dan juga diskon kepada teman yang mendaftar menggunakan kode referral tersebut.<br>
+                    Hadiah Produk: Tawarkan hadiah berupa cookies gratis atau produk eksklusif bagi pelanggan yang berhasil mereferensikan banyak pelanggan baru. Ini bisa mendorong mereka untuk aktif mempromosikan produk Anda.<br><br>
+                    
+                    <strong>6. Tawarkan Keuntungan Tambahan sebagai Bagian dari Langganan</strong><br>
+                    Tambahkan nilai lebih dalam program langganan Anda dengan menawarkan manfaat yang melampaui produk utama. Beberapa ide keuntungan tambahan meliputi:<br>
+
+                    Akses ke Acara Eksklusif: Undang pelanggan langganan ke acara khusus, seperti demo memasak online, kelas dekorasi cookies, atau sesi mencicipi rasa baru secara eksklusif sebelum diluncurkan ke publik.<br>
+                    Konten Eksklusif: Berikan pelanggan akses ke resep, tips, dan konten yang hanya bisa diakses oleh anggota langganan. Ini bisa berupa video tutorial, artikel menarik, atau panduan khusus terkait produk Anda.<br>
+                    Keanggotaan VIP: Berikan status keanggotaan khusus kepada pelanggan yang sudah lama berlangganan, lengkap dengan hadiah tahunan atau keuntungan tambahan lainnya.<br><br>
+                    Dengan menciptakan program langganan yang menarik dan memberikan nilai lebih, Anda tidak hanya bisa meningkatkan loyalitas pelanggan, tetapi juga memperkuat hubungan jangka panjang dengan mereka. Pelanggan yang setia adalah aset berharga yang bisa menjadi promotor bisnis Anda, sehingga mengembangkan program langganan dengan baik akan membantu bisnis cookies Anda tumbuh lebih stabil dan berkelanjutan.
                     </div>
                 </div>
             </div>
@@ -370,6 +376,21 @@
                 </div>   
             </a>
 
+            <!-- Artikel 3 -->
+            <a href="artikel3.html" style="text-decoration: none;">
+                <div style="box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); border: 0.07vw #734128 solid; padding: 10px; margin-bottom: 20px; max-width: 100%; display: flex; align-items: center;">
+                    <img style="width: 40%; height: auto; margin-right: 10px;" alt="artikel3" src="image/artikel3.png" />
+                    <div style="flex-grow: 1;">
+                        <div style="color: #734128; font-size: 0.97vw; font-family: Inika; margin-bottom: 5px;">
+                            24 Agustus 2024
+                        </div>
+                        <div style="color: #734128; font-size: 1.11vw; font-family: Inika;">
+                            "Inovasi Rasa Cookies...
+                        </div>
+                    </div>
+                </div>   
+            </a>
+
             <!-- Artikel 4 -->
             <a href="artikel4.html" style="text-decoration: none;">
                 <div style="box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); border: 0.07vw #734128 solid; padding: 10px; margin-bottom: 20px; max-width: 100%; display: flex; align-items: center;">
@@ -395,21 +416,6 @@
                         </div>
                         <div style="color: #734128; font-size: 1.11vw; font-family: Inika;">
                             "Kemasan Ramah Lingkungan...
-                        </div>
-                    </div>
-                </div>   
-            </a>
-
-            <!-- Artikel 6 -->
-            <a href="artikel6.html" style="text-decoration: none;">
-                <div style="box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); border: 0.07vw #734128 solid; padding: 10px; margin-bottom: 20px; max-width: 100%; display: flex; align-items: center;">
-                    <img style="width: 40%; height: auto; margin-right: 10px;" src="image/artikel6.png" />
-                    <div style="flex-grow: 1;">
-                        <div style="color: #734128; font-size: 0.97vw; font-family: Inika; margin-bottom: 5px;">
-                            26 Agustus 2024
-                        </div>
-                        <div style="color: #734128; font-size: 1.11vw; font-family: Inika;">
-                            "Program Langgana...
                         </div>
                     </div>
                 </div>   

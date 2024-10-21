@@ -280,52 +280,55 @@
         <!-- Artikel -->
         <div style="display: flex; justify-content: center; margin-left: 7%;">
             <div style="max-width: 100%; border: 0.35vw #734128 solid; background-color: white; box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25);">
-                <img style="width: 100%; height: auto; border-bottom: 0.35vw #734128 solid;" alt="artikel1" src="image/artikel3.3.png" />
+                <img style="width: 100%; height: auto; border-bottom: 0.35vw #734128 solid;" alt="artikel1" src="image/artikel5.5.png" />
                 <div style="padding: 20px;">
                     <div style="color: #734128; font-size: 0.97vw; font-family: Inika; font-weight: 400; margin-bottom: 20px;">
                         7 Agustus 2014
                     </div>
                     <div style="color: #734128; font-size: 3.5vw; font-family: Inika; font-weight: 700; margin-bottom: 30px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
-                        Inovasi Rasa Cookies yang Memikat Pelanggan
+                        Kemasan Ramah Lingkungan untuk Bisnis Cookies
                     </div>
                     <div style="color: #734128; font-size: 1.11vw; font-family: Inika; font-weight: 400;">
-                    Buat cookies Anda beda dari yang lain! Jelajahi ide rasa baru yang bisa menarik perhatian dan selera pelanggan. Dalam dunia kuliner yang terus berkembang, inovasi adalah kunci untuk memenangkan hati para konsumen. Cobalah berbagai kombinasi rasa yang unik untuk menciptakan pengalaman rasa yang baru dan menarik. Berikut adalah beberapa ide dan tips untuk menciptakan rasa cookies yang memikat pelanggan:<br><br>
+                    Ketahui bagaimana kemasan ramah lingkungan bisa membuat bisnis cookies Anda lebih menarik bagi konsumen yang peduli lingkungan. Saat ini, semakin banyak pelanggan yang memperhatikan dampak lingkungan dari produk yang mereka beli. Menggunakan kemasan yang ramah lingkungan tidak hanya baik untuk bumi, tetapi juga bisa menjadi nilai tambah yang membuat produk Anda lebih disukai. Berikut adalah beberapa cara untuk mengadopsi kemasan ramah lingkungan dalam bisnis cookies Anda:<br><br>
 
-                <strong> 1. Kombinasi Rasa yang Tidak Biasa</strong><br>
-                    Jangan takut untuk bereksperimen dengan bahan-bahan yang mungkin tidak biasa ditemukan dalam cookies. Kombinasikan rasa yang kontras untuk menciptakan kejutan di setiap gigitan. Misalnya:<br>
-
-                    Matcha & Kelapa: Matcha yang memiliki rasa earthy berpadu dengan manisnya kelapa kering untuk memberikan rasa tropis yang unik.<br>
-                    Jahe & Lemon: Kombinasi segar antara jahe pedas dan lemon asam manis memberikan rasa yang cerah dan menghangatkan.<br>
-                    Cokelat & Cabai: Tambahkan sedikit cabai pada cookies cokelat untuk sentuhan pedas yang tak terduga. Perpaduan manis dan pedas ini bisa menjadi favorit baru bagi pelanggan yang menyukai rasa unik.<br><br>
                     
-                <strong> 2. Manfaatkan Bahan Lokal</strong><br>
-                    Menciptakan rasa cookies yang memanfaatkan bahan-bahan lokal tidak hanya memberikan cita rasa khas, tetapi juga bisa menjadi daya tarik utama untuk pelanggan yang ingin merasakan sesuatu yang autentik. Beberapa contoh ide rasa lokal yang bisa dicoba:<br>
+                    <strong>1. Pilih Material Kemasan yang Biodegradable</strong><br>
+                    Material biodegradable adalah bahan yang dapat terurai secara alami tanpa meninggalkan residu berbahaya. Ini menjadi pilihan utama bagi bisnis yang ingin mengurangi limbah plastik. Beberapa material kemasan ramah lingkungan yang bisa digunakan untuk produk cookies adalah:<br>
 
-                    Pandan & Kacang Kenari: Aroma pandan yang harum dan manis cocok dipadukan dengan kacang kenari yang kaya rasa.<br>
-                    Kopi & Kacang Tanah: Gunakan kopi lokal yang khas sebagai bahan utama dan tambahkan kacang tanah untuk memberikan rasa yang kuat dan renyah.<br>
-                    Gula Aren & Pisang: Manis alami dari gula aren berpadu dengan rasa pisang matang menciptakan cookies yang lembut dan penuh aroma.<br><br>
+                    Kertas Daur Ulang: Kertas yang terbuat dari bahan daur ulang sangat cocok untuk bungkus cookies atau kotak kecil. Pastikan kertas yang digunakan tidak dilapisi plastik agar bisa terurai sepenuhnya.<br>
+                    Plastik Biodegradable: Plastik jenis ini dirancang untuk terurai lebih cepat dibandingkan plastik konvensional. Biasanya terbuat dari bahan seperti pati jagung atau tebu.<br>
+                    Kain Muslin atau Serbet Katun: Bungkus cookies dalam serbet kain yang bisa digunakan ulang. Ini tidak hanya mengurangi limbah tetapi juga menambah sentuhan estetika dan unik pada produk Anda.<br><br>
                     
-                <strong> 3. Variasi Tekstur yang Menarik</strong><br>
-                    Selain rasa, tekstur juga memainkan peran penting dalam pengalaman makan cookies. Cobalah tambahkan bahan-bahan yang memberikan tekstur berbeda, seperti:<br>
+                    <strong>2. Gunakan Kemasan yang Bisa Digunakan Kembali (Reusable)</strong><br>
+                    Salah satu cara untuk mengurangi limbah adalah dengan menggunakan kemasan yang bisa digunakan kembali oleh pelanggan. Ini bisa berupa:<br>
 
-                    Karamel & Pretzel: Kombinasi karamel yang lembut dan pretzel yang renyah menciptakan perpaduan tekstur yang menyenangkan.<br>
-                    Kismis & Granola: Tambahkan granola untuk memberikan sentuhan renyah pada cookies kismis tradisional.<br>
-                    Kepingan Cokelat & Selai Kacang Crunchy: Gunakan selai kacang dengan potongan kacang untuk menambahkan tekstur ekstra pada cookies cokelat.<br><br>
+                    Kaleng atau Toples: Cookies yang dikemas dalam kaleng atau toples bisa menjadi pilihan menarik. Setelah cookies habis, pelanggan dapat menggunakan kaleng tersebut untuk menyimpan barang lain. Selain ramah lingkungan, ini juga meningkatkan kesan premium pada produk Anda.<br>
+                    Kantong Kanvas atau Tote Bag: Cobalah berikan kemasan tambahan berupa kantong kanvas kecil yang bisa digunakan untuk keperluan lain. Ini akan menjadi kenang-kenangan yang dapat mengingatkan pelanggan pada merek Anda.<br><br>
                     
-                <strong> 4. Menggabungkan Rasa Internasional</strong><br>
-                    Inspirasi rasa dari seluruh dunia bisa menjadi inovasi menarik untuk cookies Anda. Cobalah memadukan rasa dari berbagai budaya kuliner yang populer:<br>
+                    <strong>3. Desain Kemasan yang Minimalis dan Hemat Materia</strong>l<br>
+                    Desain kemasan yang terlalu rumit seringkali menggunakan bahan tambahan yang tidak perlu. Cobalah untuk merancang kemasan yang minimalis namun tetap menarik. Beberapa cara untuk mengurangi penggunaan material adalah:<br>
 
-                    Green Tea & Red Bean (Jepang): Perpaduan green tea dengan pasta kacang merah memberikan rasa yang unik dan berani.<br>
-                    Churro Cinnamon & Chocolate (Meksiko): Rasa kayu manis khas churro dipadukan dengan cokelat untuk memberikan rasa yang hangat dan menggugah selera.<br>
-                    Lemon & Lavender (Prancis): Perpaduan aroma lavender yang lembut dengan asam segar lemon menciptakan rasa cookies yang elegan dan menenangkan.<br><br>
+                    Menghindari Lapisan Ganda: Hindari penggunaan lapisan plastik tambahan yang tidak perlu. Pilih satu jenis kemasan yang cukup kuat untuk melindungi produk namun tetap mudah diurai atau didaur ulang.<br>
+                    Pilih Desain Cetak yang Sederhana: Gunakan tinta ramah lingkungan dan desain yang sederhana agar tidak menghabiskan banyak bahan. Ini juga menciptakan kesan bersih dan modern yang disukai banyak konsumen.<br><br>
                     
-                <strong> 5. Mengembangkan Cookies Khusus Musiman</strong><br>
-                    Buatlah cookies yang hanya tersedia pada waktu-waktu tertentu untuk menciptakan kesan eksklusif dan meningkatkan minat pelanggan. Misalnya:<br>
+                    <strong>4. Sertakan Informasi tentang Ramah Lingkungan pada Kemasan</strong><br>
+                    Jangan hanya menggunakan kemasan ramah lingkungan, tetapi pastikan juga pelanggan Anda tahu tentang hal itu. Cantumkan informasi singkat di kemasan yang menyebutkan bahwa bahan tersebut biodegradable, daur ulang, atau reusable. Beberapa tips adalah:<br>
 
-                    Pumpkin Spice untuk Musim Gugur: Campuran kayu manis, pala, dan jahe dengan labu menciptakan cookies khas musim gugur yang hangat.<br>
-                    Mint Chocolate untuk Musim Liburan: Kombinasi rasa mint segar dan cokelat lezat cocok untuk merayakan suasana musim liburan.<br>
-                    Cookies Mangga untuk Musim Panas: Rasa manis dan segar dari mangga menjadi pilihan sempurna untuk cookies musim panas yang menyegarkan.<br><br>
-                    Inovasi rasa adalah cara terbaik untuk menarik perhatian pelanggan dan membuat cookies Anda menonjol di pasar yang kompetitif. Dengan terus bereksperimen dan mencoba kombinasi rasa baru, Anda bisa menemukan formula yang membuat pelanggan selalu kembali untuk menikmati cookies buatan Anda. Jangan ragu untuk menggabungkan rasa yang tidak biasa, dan selamat bereksperimen!
+                    Label atau Stiker: Tempelkan label yang menyatakan "Kemasan Ramah Lingkungan" atau "100% Biodegradable" sehingga pelanggan menyadari komitmen Anda terhadap lingkungan.<br>
+                    Pesan Edukasi: Sertakan pesan pendek tentang pentingnya daur ulang atau pengurangan limbah. Ini tidak hanya memberikan informasi tetapi juga membangun citra positif bagi merek Anda.<br><br>
+                    
+                    <strong>5. Berkolaborasi dengan Supplier Kemasan yang Berkelanjutan</strong><br>
+                    Cari supplier kemasan yang memiliki komitmen terhadap praktik berkelanjutan dan peduli lingkungan. Mereka biasanya menyediakan berbagai pilihan kemasan ramah lingkungan yang bisa Anda pilih sesuai kebutuhan bisnis.<br>
+
+                    Supplier Lokal: Menggunakan supplier lokal membantu mengurangi emisi karbon yang dihasilkan dari pengiriman jarak jauh. Selain itu, Anda juga bisa mendukung ekonomi lokal.<br>
+                    Supplier dengan Sertifikasi Lingkungan: Pilih supplier yang memiliki sertifikasi lingkungan seperti FSC (Forest Stewardship Council) untuk memastikan bahwa material yang digunakan berasal dari sumber yang bertanggung jawab.<br><br>
+                    
+                    <strong></strong>6. Mengadopsi Praktik Berkelanjutan dalam Produksi<br>
+                    Menggunakan kemasan ramah lingkungan adalah langkah yang baik, tetapi juga penting untuk memastikan seluruh rantai produksi Anda mendukung konsep keberlanjutan. Beberapa langkah yang bisa diambil adalah:<br>
+
+                    Mengurangi Limbah Produksi: Kurangi limbah selama proses produksi dengan menggunakan bahan baku yang efisien.<br>
+                    Penggunaan Energi Terbarukan: Jika memungkinkan, gunakan sumber energi terbarukan di fasilitas produksi Anda untuk mengurangi jejak karbon.<br><br>
+                    Dengan mengadopsi kemasan ramah lingkungan, bisnis cookies Anda tidak hanya ikut berkontribusi pada pelestarian lingkungan, tetapi juga menarik perhatian konsumen yang semakin peduli dengan keberlanjutan. Langkah ini dapat menjadi bagian dari strategi pemasaran Anda yang menonjolkan komitmen bisnis terhadap lingkungan, sekaligus memberi nilai tambah pada produk Anda di mata pelanggan. Selamat mencoba, dan semoga bisnis cookies Anda semakin berkembang dengan inovasi kemasan yang lebih ramah lingkungan!
                     </div>
                 </div>
             </div>
@@ -370,6 +373,21 @@
                 </div>   
             </a>
 
+            <!-- Artikel 3 -->
+            <a href="artikel3.html" style="text-decoration: none;">
+                <div style="box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); border: 0.07vw #734128 solid; padding: 10px; margin-bottom: 20px; max-width: 100%; display: flex; align-items: center;">
+                    <img style="width: 40%; height: auto; margin-right: 10px;" alt="artikel3" src="image/artikel3.png" />
+                    <div style="flex-grow: 1;">
+                        <div style="color: #734128; font-size: 0.97vw; font-family: Inika; margin-bottom: 5px;">
+                            24 Agustus 2024
+                        </div>
+                        <div style="color: #734128; font-size: 1.11vw; font-family: Inika;">
+                            "Inovasi Rasa Cookies...
+                        </div>
+                    </div>
+                </div>   
+            </a>
+
             <!-- Artikel 4 -->
             <a href="artikel4.html" style="text-decoration: none;">
                 <div style="box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); border: 0.07vw #734128 solid; padding: 10px; margin-bottom: 20px; max-width: 100%; display: flex; align-items: center;">
@@ -380,21 +398,6 @@
                         </div>
                         <div style="color: #734128; font-size: 1.11vw; font-family: Inika;">
                             "Media Sosial untuk...
-                        </div>
-                    </div>
-                </div>   
-            </a>
-
-            <!-- Artikel 5 -->
-            <a href="artikel5.html" style="text-decoration: none;">
-                <div style="box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); border: 0.07vw #734128 solid; padding: 10px; margin-bottom: 20px; max-width: 100%; display: flex; align-items: center;">
-                    <img style="width: 40%; height: auto; margin-right: 10px;" src="image/artikel5.png" />
-                    <div style="flex-grow: 1;">
-                        <div style="color: #734128; font-size: 0.97vw; font-family: Inika; margin-bottom: 5px;">
-                            26 Agustus 2024
-                        </div>
-                        <div style="color: #734128; font-size: 1.11vw; font-family: Inika;">
-                            "Kemasan Ramah Lingkungan...
                         </div>
                     </div>
                 </div>   

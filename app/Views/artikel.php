@@ -247,55 +247,56 @@
             }
 
             .ListitemLink {
-              width: 100%;
-              max-width: 350px;
-              height: auto;
-              background: white;
-              border-radius: 12px;
-              border: 1px solid #E0E0E0;
-              display: inline-flex;
-              flex-direction: column;
-              justify-content: flex-start;
-              align-items: center;
-              margin: 20px 0;
-              min-height: 400px; /* Sesuaikan ukuran sesuai kebutuhan */
-            }
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #E0E0E0;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 20px 0;
+            min-height: 400px; /* Sesuaikan ukuran sesuai kebutuhan */
+          }
 
-            /* Efek hover untuk ListitemLink */
-            .ListitemLink:hover {
-              transform: translateY(-5px); /* Angkat kotak saat dihover */
-              box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Tambah bayangan */
-            }
+          /* Efek hover untuk ListitemLink */
+          .ListitemLink:hover {
+            transform: translateY(-5px); /* Angkat kotak saat dihover */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Tambah bayangan */
+          }
 
-            .ListitemLink img {
-              width: 100%;
-              height: auto;
-              border-top-left-radius: 6px;
-              border-top-right-radius: 6px;
-            }
+          .ListitemLink img {
+            width: 348px; /* Atur lebar gambar */
+            height: 200px; /* Atur tinggi gambar */
+            object-fit: cover; /* Memastikan gambar sesuai tanpa distorsi */
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+          }
 
-            .Heading3 {
-              width: 318px;
-              height: auto;
-              text-align: center;
-              font-size: 20px;
-              font-family: Inika;
-              font-weight: 700;
-              line-height: 32px;
-              margin-top: 10px;
-            }
+          .Heading3 {
+            width: 318px;
+            height: auto;
+            text-align: center;
+            font-size: 20px;
+            font-family: Inika;
+            font-weight: 700;
+            line-height: 32px;
+            margin-top: 10px;
+          }
 
-            .text2 {
-              width: 90%;
-              max-width: 318px;
-              color: #696969;
-              font-size: 16px;
-              font-family: Inika;
-              font-weight: 400;
-              line-height: 24px;
-              margin-top: 10px;
-              text-align: justify;
-            }
+          .text2 {
+            width: 90%;
+            max-width: 318px;
+            color: #696969;
+            font-size: 16px;
+            font-family: Inika;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 10px;
+            text-align: justify;
+          }
 
             /* Responsive Design */
             @media (max-width: 1200px) {
@@ -459,7 +460,7 @@
           <div class="ListitemLink">
             <img alt="artikel3" src="image/artikel3.png" />
             <div class="Heading3">
-              <a href="artikel3.html" style="text-decoration: none; color: inherit;">
+              <a href="<?= base_url('artikel3') ?>" style="text-decoration: none; color: inherit;">
                 "Inovasi Rasa Cookies yang Memikat Pelanggan"
               </a>
             </div>
@@ -470,7 +471,7 @@
           <div class="ListitemLink">
             <img alt="artikel4" src="image/artikel4.png" />
             <div class="Heading3">
-              <a href="artikel4.html" style="text-decoration: none; color: inherit;">
+              <a href="<?= base_url('artikel4') ?>" style="text-decoration: none; color: inherit;">
                 "Media Sosial untuk Mengembangkan Bisnis Cookies"
               </a>
             </div>
@@ -481,7 +482,7 @@
           <div class="ListitemLink">
             <img alt="artikel5" src="image/artikel5.png" />
             <div class="Heading3">
-              <a href="artikel5.html" style="text-decoration: none; color: inherit;">
+              <a href="<?= base_url('artikel5') ?>" style="text-decoration: none; color: inherit;">
                 "Kemasan Ramah Lingkungan untuk Bisnis Cookies"              
               </a>
             </div>
@@ -492,7 +493,7 @@
           <div class="ListitemLink">
             <img alt="artikel6" src="image/artikel6.png" />
             <div class="Heading3">
-              <a href="artikel6.html" style="text-decoration: none; color: inherit;">
+              <a href="<?= base_url('artikel6') ?>" style="text-decoration: none; color: inherit;">
                 "Program Langganan: Tingkatkan Loyalitas Pelanggan"
               </a>
             </div>

@@ -36,6 +36,36 @@ class Home extends BaseController
         return view('artikel1', );
     }
 
+    // Halaman Artikel 2 (Jika ini halaman berbeda)
+    public function artikel2()
+    {
+        return view('artikel2', );
+    }
+
+    // Halaman Artikel 3 (Jika ini halaman berbeda)
+    public function artikel3()
+    {
+        return view('artikel3', );
+    }
+
+    // Halaman Artikel 4 (Jika ini halaman berbeda)
+    public function artikel4()
+    {
+        return view('artikel4', );
+    }
+
+    // Halaman Artikel 5 (Jika ini halaman berbeda)
+    public function artikel5()
+    {
+        return view('artikel5', );
+    }
+
+    // Halaman Artikel 6 (Jika ini halaman berbeda)
+    public function artikel6()
+    {
+        return view('artikel6', );
+    }
+
     // Halaman Produk
     public function produk()
     {
@@ -48,6 +78,24 @@ class Home extends BaseController
         return view('produk1');
     }
 
+    // Halaman Produk 2
+    public function produk2()
+    {
+        return view('produk2');
+    }
+
+    // Halaman Produk 3
+    public function produk3()
+    {
+        return view('produk3');
+    }
+
+    // Halaman Produk 4
+    public function produk4()
+    {
+        return view('produk4');
+    }
+
     // Halaman Aktivitas
     public function aktivitas()
     {
@@ -58,6 +106,18 @@ class Home extends BaseController
     public function aktivitas1()
     {
         return view('aktivitas1');
+    }
+
+    // Halaman Aktivitas 2
+    public function aktivitas2()
+    {
+        return view('aktivitas2');
+    }
+
+    // Halaman Aktivitas 3
+    public function aktivitas3()
+    {
+        return view('aktivitas3');
     }
 
     // Halaman Kontak
