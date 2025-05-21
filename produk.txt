@@ -1,0 +1,108 @@
+<div class="header">
+      <!-- Logo -->
+      <div class="logo">
+          <img src="image/logo.png" alt="Logo">
+      </div>
+
+      <!-- Hamburger Icon (hanya muncul di mobile) -->
+      <div class="hamburger" onclick="toggleNav()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+
+      <!-- Navigation Container -->
+      <div class="nav-container">
+          <div class="nav-links">
+              <a href="<?= base_url('/') ?>">Beranda</a>
+              <a href="<?= base_url('tentang') ?>">Tentang</a>
+              <a href="<?= base_url('artikel') ?>">Artikel</a>
+              <a href="<?= base_url('produk') ?>" class="active">Produk</a>
+              <a href="<?= base_url('aktivitas') ?>">Aktivitas</a>
+              <a href="<?= base_url('kontak') ?>">Kontak</a>
+
+              <!-- Language Selector (pindah ke dalam .nav-links) -->
+              <div class="language-selector">
+                  <div class="selected-language" onclick="toggleLanguageMenu()">
+                      <div>Bahasa</div>
+                      <div class="arrow"></div>
+                  </div>
+                  <div class="language-menu">
+                      <div onclick="changeLanguage('English')">English</div>
+                      <div onclick="changeLanguage('Indonesia')">Indonesia</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div style="position: relative; width: 100%; height: 30vh; margin-bottom: 0;"> 
+      <!-- Gambar responsif -->
+      <img alt="tentang" src="image/tentang.png" style="width: 100%; height: 100%; object-fit: cover; margin-bottom: 0; padding: 0; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);" /> 
+
+      <!-- Overlay untuk gambar -->
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.50);"></div>
+
+      <!-- Teks responsif di tengah gambar -->
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center;">
+          <div style="color: #E2CEB1; font-size: 3vw; font-family: Inika; font-weight: 700; line-height: 1.1; word-wrap: break-word;">
+              Produk Joyful Crunch
+          </div>
+      </div>
+  </div>
+  <div class="responsive-box">
+        <div class="box"></div>
+        <div class="text"> Produk</div>
+      </div>
+    <div class="Background">
+      <div class="Container">
+        <div class="Frame299">
+            <!-- produk1 -->
+            <a href="<?= base_url('produk1') ?>" style="text-decoration: none; color: inherit;">
+                <div style="width: 235px; height: 355px; position: relative; border-radius: 20px; overflow: hidden; margin-bottom: 20px;">
+                    <img style="width: 235px; height: 420px; position: absolute; top: -117px; border-radius: 20px;" alt="cookiecoklat" src="image/cookiecoklat.png" />
+                    <div style="width: 357px; height: 357px; position: absolute; left: -89px; top: 226px; background: #C7A07A; border-radius: 9999px;"></div>
+                    <div style="position: absolute; left: 22px; top: 251px; color: #FDFCE8; font-size: 30px; font-family: Inika; font-weight: 400; text-decoration: underline; line-height: 40px; word-wrap: break-word;">Cookie <br/>coklat</div>
+                    <div style="width: 55px; height: 40px; position: absolute; left: 6px; top: 9px; display: inline-flex; justify-content: center; align-items: center;">
+                        <img style="width: 55px; height: 40px;" alt="logokecil" src="image/logokecil.png" />
+                    </div>
+                </div>
+            </a>
+
+            <!-- produk2 -->
+            <a href="<?= base_url('produk1') ?>" style="text-decoration: none; color: inherit;">
+                <div style="width: 235px; height: 355px; position: relative; border-radius: 20px; overflow: hidden; margin-bottom: 20px;">
+                    <img style="width: 264px; height: 420px; position: absolute; left: -29px; top: -88px; border-radius: 20px;" alt="cookiegula" src="image/cookiegula.png" />
+                    <div style="width: 357px; height: 357px; position: absolute; left: -89px; top: 226px; background: #C7A07A; border-radius: 9999px;"></div>
+                    <div style="position: absolute; left: 28px; top: 247px; color: #FDFCE8; font-size: 30px; font-family: Inika; font-weight: 400; text-decoration: underline; line-height: 40px; word-wrap: break-word;">Cookie <br/>Gula</div>
+                    <div style="width: 55px; height: 40px; position: absolute; left: 6px; top: 9px; display: inline-flex; justify-content: center; align-items: center;">
+                        <img style="width: 55px; height: 40px;" alt="logokecil" src="image/logokecil.png" />
+                    </div>
+                </div>
+            </a>
+
+            <!-- produk3 -->  
+            <a href="<?= base_url('produk1') ?>" style="text-decoration: none; color: inherit;">
+                <div style="width: 235px; height: 355px; position: relative; border-radius: 20px; overflow: hidden; margin-bottom: 20px;">
+                    <img style="width: 254px; height: 420px; position: absolute; top: -9px; border-radius: 20px;" alt="eskrimcookie" src="image/eskrimcookie.png" />
+                    <div style="width: 357px; height: 357px; position: absolute; left: -89px; top: 226px; background: #C7A07A; border-radius: 9999px;"></div>
+                    <div style="position: absolute; left: 21px; top: 251px; color: #FDFCE8; font-size: 30px; font-family: Inika; font-weight: 400; text-decoration: underline; line-height: 40px; word-wrap: break-word;">Es Krim <br/>Cookies</div>
+                    <div style="width: 55px; height: 40px; position: absolute; left: 6px; top: 9px; display: inline-flex; justify-content: center; align-items: center;">
+                        <img style="width: 55px; height: 40px;" alt="logokecil" src="image/logokecil.png" />
+                    </div>
+                </div>
+            </a>
+
+            <!-- produk4 -->  
+            <a href="<?= base_url('produk1') ?>" style="text-decoration: none; color: inherit;">
+                <div style="width: 235px; height: 355px; position: relative; border-radius: 20px; overflow: hidden; margin-bottom: 20px;">
+                    <img style="width: 235px; height: 420px; position: absolute; top: -83px; border-radius: 20px;" alt="cookieboom" src="image/cookieboom.png" />
+                    <div style="width: 357px; height: 357px; position: absolute; left: -89px; top: 226px; background: #C7A07A; border-radius: 9999px;"></div>
+                    <div style="position: absolute; left: 26px; top: 252px; color: #FDFCE8; font-size: 30px; font-family: Inika; font-weight: 400; text-decoration: underline; line-height: 40px; word-wrap: break-word;">Cookie <br/>Boom</div>
+                    <div style="width: 55px; height: 40px; position: absolute; left: 6px; top: 9px; display: inline-flex; justify-content: center; align-items: center;">
+                        <img style="width: 55px; height: 40px;" alt="logokecil" src="image/logokecil.png" />
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+      </div>
