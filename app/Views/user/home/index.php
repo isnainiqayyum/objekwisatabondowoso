@@ -12,8 +12,8 @@
                 <!-- Slider Item 1 -->
                 <div class="position-relative overflow-hidden slider-container">
                     <img
-                        class="img-fluid w-100 h-100 lazyload"
-                        data-src="<?= base_url('asset-user/uploads/slide1.png') ?>"
+                        class="img-fluid w-100 h-100"
+                        src="<?= base_url('asset-user/uploads/slide1.png') ?>"
                         alt="Slider 1"
                         style="object-fit: cover;"
                         loading="lazy"
@@ -23,8 +23,8 @@
                 <!-- Slider Item 2 -->
                 <div class="position-relative overflow-hidden slider-container">
                     <img
-                        class="img-fluid w-100 h-100 lazyload"
-                        data-src="<?= base_url('asset-user/uploads/slide2.png') ?>"
+                        class="img-fluid w-100 h-100"
+                        src="<?= base_url('asset-user/uploads/slide2.png') ?>"
                         alt="Slider 2"
                         style="object-fit: cover; object-position: 10% center;"
                         loading="lazy"
@@ -81,7 +81,7 @@
     ?>
         <div class="col-lg-4 mb-4">
             <div class="artikel-card d-flex flex-column h-100 shadow-sm rounded">
-                <a href="<?= base_url('wisata/detail/' . $id) ?>" class="artikel-link">
+                <a href="<?= base_url('user/wisata/detail/' . $id) ?>" class="artikel-link">
                     <img 
                         src="<?= esc($imageToDisplay) ?>" 
                         alt="<?= esc($nama) ?>" 
@@ -108,12 +108,12 @@
     <?php
     $displayedArtikel = array_slice($randomArtikel, 0, 6);
     foreach ($displayedArtikel as $artikel):
-        $imagePath = 'asset-user/uploads/foto_artikel/' . $artikel->foto;
+        $imagePath = 'assets-baru/img/foto_artikel/' . $artikel->foto;
         $imageToDisplay = (file_exists(FCPATH . $imagePath) && !empty($artikel->foto)) ? base_url($imagePath) : $defaultImage;
     ?>
         <div class="col-lg-4 mb-4">
             <div class="artikel-card d-flex flex-column h-100 shadow-sm rounded">
-                <a href="<?= base_url('artikel/detail/' . $artikel->id) ?>" class="artikel-link">
+                <a href="<?= base_url('user/artikel/detail/' . $artikel->id) ?>" class="artikel-link">
                     <img 
                         src="<?= esc($imageToDisplay) ?>" 
                         alt="<?= esc($artikel->judul_artikel) ?>" 
@@ -289,10 +289,44 @@ $(document).ready(function(){
         autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
-        lazyLoad: true,  // aktifkan lazy load bawaan Owl Carousel
-        navText: ['&#8249;', '&#8250;']  // arrow kiri kanan
+        lazyLoad: true,
+        navText: ['<', '>']  // panah kiri-kanan
     });
 });
 </script>
+<style>
+   /* Posisi tombol panah di kanan dan kiri tengah gambar */
+.main-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* kiri dan kanan */
+    transform: translateY(-50%);
+    padding: 0 15px; /* jarak dari tepi gambar */
+    pointer-events: none; /* supaya klik di area kosong tidak tersangkut */
+    z-index: 10;
+}
+
+.main-carousel .owl-nav button.owl-prev,
+.main-carousel .owl-nav button.owl-next {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5); /* putih transparan */
+    font-size: 40px; /* besar */
+    font-weight: bold;
+    cursor: pointer;
+    pointer-events: auto; /* supaya tombol bisa diklik */
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+/* Hover: warna jadi lebih terang */
+.main-carousel .owl-nav button.owl-prev:hover,
+.main-carousel .owl-nav button.owl-next:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+    </style>
 
 <?= $this->endSection(); ?>

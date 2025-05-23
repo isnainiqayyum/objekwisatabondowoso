@@ -4,6 +4,17 @@
 <div class="container mt-4">
     <h1 class="mb-4"><?= esc($judul) ?></h1>
 
+    <!-- Form Search -->
+    <form action="" method="get" class="mb-3">
+        <div class="input-group">
+            <input type="text" name="search" class="form-control" placeholder="Cari berdasarkan Nama Lengkap" value="<?= esc($search ?? '') ?>">
+            <button class="btn btn-primary" type="submit">Cari</button>
+            <?php if (!empty($search)) : ?>
+                <a href="<?= base_url('admin/rekomendasi/riwayat') ?>" class="btn btn-secondary">Reset</a>
+            <?php endif; ?>
+        </div>
+    </form>
+
     <div class="table-responsive">
         <table class="table table-bordered table-striped">
             <thead>

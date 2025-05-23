@@ -17,9 +17,22 @@ class RekomendasiController extends BaseController
     // Tampilkan daftar riwayat rekomendasi
     public function riwayat()
     {
+        $search = $this->request->getGet('search'); // Ambil keyword dari input form
+
+        if ($search) {
+            // Jika ada pencarian, ambil data yang sesuai
+            $rekomendasi = $this->rekomendasiModel
+                ->like('nama_lengkap', $search)
+                ->findAll();
+        } else {
+            // Jika tidak ada pencarian, ambil semua data
+            $rekomendasi = $this->rekomendasiModel->findAll();
+        }
+
         $data = [
             'judul' => 'Riwayat Rekomendasi',
-            'rekomendasi' => $this->rekomendasiModel->getAllRekomendasi()
+            'rekomendasi' => $rekomendasi,
+            'search' => $search // Kirim ke view untuk mengisi kembali input pencarian
         ];
 
         return view('admin/rekomendasi/riwayat', $data);

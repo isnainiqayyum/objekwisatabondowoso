@@ -44,10 +44,6 @@
     <!-- Footer -->
     <?= $this->include('user/layout/footer') ?>
 
-    <!-- Tombol Kembali ke Atas -->
-    <a href="#" class="btn btn-primary btn-square back-to-top" style="display:none;">
-        <i class="fa fa-arrow-up"></i>
-    </a>
 
     <!-- JS Libraries -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -83,6 +79,8 @@
             });
         });
     </script>
+
+    
 
     <!-- Modal Pendaftaran -->
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">

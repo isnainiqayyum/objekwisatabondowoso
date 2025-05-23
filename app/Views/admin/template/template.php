@@ -11,95 +11,89 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-<style>
-    </* Reset margin/padding dasar */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
 
-/* Header fixed di atas */
-header.admin-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 56px;
-    background-color: #67a4ff;
-    color: white;
-    z-index: 1030; /* pastikan di atas sidebar */
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
-}
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #f8f9fa; /* Latar belakang abu terang */
+            font-family: 'Segoe UI', sans-serif;
+        }
 
-/* Sidebar fixed dari atas 0 */
-#sidebar {
-    position: fixed;
-    top: 0; /* mulai dari paling atas */
-    left: 0;
-    width: 200px;
-    height: 100vh; /* tinggi penuh */
-    background-color: #67a4ff;
-    overflow-y: auto;
-    font-size: 0.9rem;
-    user-select: none;
-    padding-top: 56px; /* beri padding top sama dengan tinggi header agar isi sidebar tidak tertutup header */
-    box-sizing: border-box;
-    z-index: 1020; /* di bawah header */
-}
+        /* HEADER */
+        header.admin-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background-color: #ffffff;
+            color: #333;
+            z-index: 1030;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
 
-/* Link sidebar */
-#sidebar .nav-link {
-    margin: 0;
-    padding: 0.5rem 1rem;
-    color: #adb5bd;
-    text-decoration: none;
-    transition: background-color 0.2s ease, color 0.2s ease;
-    cursor: pointer;
-}
+        /* SIDEBAR */
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 220px;
+            height: 100vh;
+            background-color: #212529; /* Warna sidebar hitam */
+            color: #fff;
+            overflow-y: auto;
+            padding-top: 56px;
+            box-sizing: border-box;
+        }
 
-/* Hover dan active link */
-#sidebar .nav-link:hover,
-#sidebar .nav-link.active {
-    color: white;
-    background-color: #67a4ff;
-    text-decoration: none;
-}
+        #sidebar .nav-link {
+            padding: 0.75rem 1.25rem;
+            color: #adb5bd;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: 0.3s;
+        }
 
-/* Main content */
-#content {
-    margin-left: 200px; /* sesuaikan dengan sidebar */
-    padding: 2rem;
-    min-height: 100vh;
-    padding-top: 56px; /* beri ruang supaya tidak tertutup header */
-    box-sizing: border-box;
-}
+        #sidebar .nav-link:hover,
+        #sidebar .nav-link.active {
+            background-color: #343a40;
+            color: #fff;
+        }
 
-/* Responsive */
-@media (max-width: 768px) {
-    #sidebar {
-        width: 60px;
-        padding-top: 56px;
-    }
+        #sidebar .nav-link i {
+            width: 20px;
+            text-align: center;
+        }
 
-    #sidebar .nav-link {
-        padding: 0.75rem 1rem;
-        font-size: 0;
-    }
+        /* CONTENT */
+        #content {
+            margin-left: 220px;
+            padding: 2rem;
+            padding-top: 70px;
+            box-sizing: border-box;
+        }
 
-    #sidebar .nav-link i {
-        font-size: 1.2rem;
-    }
+        @media (max-width: 768px) {
+            #sidebar {
+                width: 60px;
+            }
 
-    #content {
-        margin-left: 60px;
-        padding: 1.5rem 1rem;
-        padding-top: 56px;
-    }
-}
+            #sidebar .nav-link span {
+                display: none;
+            }
 
+            #content {
+                margin-left: 60px;
+                padding: 1.5rem 1rem;
+            }
+        }
     </style>
 </head>
 
@@ -115,7 +109,7 @@ header.admin-header {
         <?= $this->renderSection('content') ?>
     </div>
 
-    <!-- Bootstrap Bundle JS + FontAwesome JS -->
+    <!-- Bootstrap Bundle + FontAwesome -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </body>

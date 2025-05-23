@@ -20,10 +20,17 @@ class Wisata extends BaseController
     public function index()
     {
         $limit = 9;
+        $kategori = $this->request->getGet('kategori');
+
+        if ($kategori) {
+            $tempatwisata = $this->alternatifModel->getAllWithNamaSubkriteriaByKategori($kategori, $limit);
+        } else {
+            $tempatwisata = $this->alternatifModel->getAllWithNamaSubkriteria($limit);
+        }
 
         $data = [
             'title' => 'Daftar Tempat Wisata',
-            'tempatwisata' => $this->alternatifModel->getAllWithNamaSubkriteria($limit),
+            'tempatwisata' => $tempatwisata,
             'pager' => $this->alternatifModel->pager,
             'kategoriwisata' => $this->subKriteriaModel->where('id_kriteria', 1)->findAll()
         ];

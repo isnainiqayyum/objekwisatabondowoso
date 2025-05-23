@@ -1,9 +1,7 @@
 <!-- FOOTER YANG BENAR-BENAR FULL -->
 <div class="footer-fullwidth">
     <div class="py-4 px-3 px-md-5 text-center text-white">
-        <?php if (isset($tentang[0]->footer)): ?>
-            <span>@pariwisatabondowoso2025</span>
-        <?php endif; ?>
+        <span>@pariwisatabondowoso2025</span>
     </div>
 
     <!-- Tombol Back to Top -->
@@ -11,7 +9,20 @@
         <i class="fa fa-arrow-up"></i>
     </a>
 </div>
-<style>.footer-fullwidth {
+
+<style>
+        /* Bisa di style.css global */
+        body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .footer-fullwidth {
+        margin-top: auto;
+        }
+
+.footer-fullwidth {
     width: 100vw; /* Lebar penuh viewport */
     position: relative;
     left: 50%;
@@ -38,7 +49,7 @@
         background-color: #0056b3;
         color: white;
     }
-</style>
+</>
 
 <!-- OPTIONAL SCRIPT SCROLL (JIKA PERLU EFEK SMOOTH) -->
 <script>

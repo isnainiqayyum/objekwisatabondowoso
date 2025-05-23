@@ -1,37 +1,62 @@
-<header class="app-header fixed-top bg-dark text-white">
-    <div class="app-header-inner">
-        <div class="container-fluid py-2">
-            <div class="app-header-content">
-                <div class="row justify-content-between align-items-center">
+<header class="app-header fixed-top">
+  <div class="app-header-inner">
+    <div class="container-fluid py-2 px-3">
+      <div class="app-header-content">
+        <div class="d-flex justify-content-between align-items-center">
 
-                    <div class="col-auto">
-                        <!-- Toggle sidebar button untuk mobile -->
-                        <a id="sidepanel-toggler" class="sidepanel-toggler d-inline-block d-xl-none text-white" href="#" role="button" aria-label="Toggle menu">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
-                                <title>Menu</title>
-                                <path d="M4 7h22M4 15h22M4 23h22"></path>
-                            </svg>
-                        </a>
-                    </div><!--//col-->
+          <!-- Toggle sidebar -->
+          <a id="sidepanel-toggler" class="d-inline-block d-xl-none text-white" href="#" role="button" aria-label="Toggle menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+              <title>Menu</title>
+              <path d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+          </a>
 
-                    <div class="search-mobile-trigger d-sm-none col text-center">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div><!--//col-->
+          <!-- Area kosong tengah untuk search atau nama aplikasi -->
+          <div class="d-none d-md-flex flex-grow-1 justify-content-center">
+            <span class="text-white fw-semibold fs-5"></span>
+          </div>
 
-                    <div class="app-utilities col-auto">
-                        <div class="app-utility-item app-user-dropdown dropdown">
-                            <a class="dropdown-toggle text-white d-flex align-items-center" href="#" id="user-dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="<?= base_url('assets/images/user.png') ?>" alt="user profile" class="rounded-circle me-2" width="32" height="32">
-                                <span class="d-none d-md-inline">Admin</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="user-dropdown-toggle">
-                                <li><a class="dropdown-item" href="<?= site_url('logout') ?>">Log Out</a></li>
-                            </ul>
-                        </div><!--//app-user-dropdown-->
-                    </div><!--//app-utilities-->
+          <!-- User menu -->
+          <div class="app-utilities">
+            <div class="app-utility-item dropdown">
+              <a class="dropdown-toggle d-flex align-items-center text-white" href="#" id="user-dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="<?= base_url('assets/images/user.png') ?>" alt="user" class="rounded-circle me-2" width="32" height="32">
+                <span class="d-none d-md-inline">Admin</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end mt-2 shadow-sm" aria-labelledby="user-dropdown-toggle">
+                <li><a class="dropdown-item" href="<?= site_url('logout') ?>">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
 
-                </div><!--//row-->
-            </div><!--//app-header-content-->
-        </div><!--//container-fluid-->
-    </div><!--//app-header-inner-->
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
+
+<style>
+.app-header {
+  background-color: #1f1f1f;
+  color: #fff;
+  height: 60px;
+  border-bottom: 1px solid #343a40;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1030;
+}
+
+#sidepanel-toggler:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dropdown-menu {
+  font-size: 0.95rem;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+</style>

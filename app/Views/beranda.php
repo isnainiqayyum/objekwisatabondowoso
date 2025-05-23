@@ -5,94 +5,72 @@
     <title>Beranda</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 40px;
-        background-color: #f1f1f1;
-        flex-wrap: wrap;
-    }
-
-    .logo img {
-        height: 50px;
-    }
-
-    .menu {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .menu a {
-        margin-left: 20px;
-        text-decoration: none;
-        color: black;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-    }
-
-    .menu a i {
-        margin-right: 5px;
-    }
-
-        .content {
-    height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),
-                url('assets/images/beranda.png') no-repeat left center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-
-    /* Responsif untuk layar kecil */
-    @media (max-width: 768px) {
-        .navbar {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 10px 20px;
+        html, body {
+            margin: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
         }
 
-        .menu {
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-            margin-top: 10px;
+        body {
+            background: url('assets/images/bgberanda.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 10%;
+            height: 100vh;
+            position: relative;
         }
 
-        .menu a {
-            margin: 10px 0;
+        .btn-container {
+            position: absolute;
+            top: 70%; /* Ini bikin tombol berada di tengah agak ke bawah */
+            left: 5%;
+            transform: translateY(-50%);
         }
 
-        .content {
-            height: auto;
-            padding: 60px 20px;
+        .btn-rekomendasi {
+            background-color: #FFD700; /* Kuning */
+            color: black;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: background-color 0.3s ease, transform 0.2s;
         }
-    }
-</style>
 
+        .btn-rekomendasi:hover {
+            background-color: #e6c200;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                justify-content: center;
+                padding: 0 20px;
+            }
+
+            .btn-container {
+                top: 65%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .btn-rekomendasi {
+                width: 100%;
+                max-width: 300px;
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="assets/images/logobonday.png" alt="Logo">
-        </div>
-        <div class="menu">
-            <a href="/login"><i class="fas fa-sign-in-alt"></i> Login</a>
-        </div>
-    </div>
-
-    <div class="content">
+    <div class="btn-container">
+        <button class="btn-rekomendasi" onclick="window.location.href='user/rekomendasi/index'">
+            <i class="fas fa-play"></i> Mulai Rekomendasi
+        </button>
     </div>
 </body>
 </html>

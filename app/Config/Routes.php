@@ -8,9 +8,8 @@ $routes->set404Override();
 $routes->setAutoRoute(true); // atau false, sesuai keamanan aplikasi kamu
 
 // === ROUTE DASAR (USER) ===
-$routes->group('', ['namespace' => 'App\Controllers\User'], function($routes) {
-    $routes->get('/', 'Home::index'); // root langsung ke beranda user
-});
+    $routes->get('/', 'beranda'); // root langsung ke beranda user
+
 
 $routes->group('', ['namespace' => 'App\Controllers'], function($routes) {
     $routes->get('login', 'Login::index'); // halaman login
@@ -109,7 +108,7 @@ $routes->group('user', ['namespace' => 'App\Controllers\User'], function($routes
 
     // Wisata
     $routes->get('wisata', 'Wisata::index');        // URL: /user/wisata
-    $routes->get('wisata/(:num)', 'Wisata::detail/$1'); // URL: /user/wisata/123
+    $routes->get('wisata/detail/(:num)', 'Wisata::detail/$1');
 
     // Rekomendasi
     $routes->get('rekomendasi', 'Rekomendasi::index');  // URL: /user/rekomendasi
@@ -118,6 +117,7 @@ $routes->group('user', ['namespace' => 'App\Controllers\User'], function($routes
     // Tentang
     $routes->get('tentang', 'Tentangctrl::index');      // URL: /user/tentang
 
-    // Kategori
-    $routes->get('kategori/semua-artikel', 'Kategori::semuaArtikel'); // URL: /user/kategori/semua-artikel
+    //artikel
+    $routes->get('artikel', 'Artikel::index');
+    $routes->get('artikel/detail/(:num)', 'Artikel::detail/$1');
 });

@@ -8,6 +8,7 @@ class AlternatifModel extends Model
 {
     protected $table = 'tb_alternatif';
     protected $primaryKey = 'id_alternatif';
+
     protected $allowedFields = [
         'id_kriteria',
         'id_subkriteria',
@@ -29,13 +30,22 @@ class AlternatifModel extends Model
                     ->findAll();
     }
 
-    // Ambil data wisata lengkap dengan nama_subkriteria (khusus untuk halaman user)
-public function getAllWithNamaSubkriteria($limit = 9)
-{
-    return $this->select('tb_alternatif.*, tb_subkriteria.nama_subkriteria')
-                ->join('tb_subkriteria', 'tb_subkriteria.id_subkriteria = tb_alternatif.id_subkriteria')
-                ->orderBy('tb_alternatif.id_alternatif', 'DESC')
-                ->paginate($limit);
-}
+    // Ambil semua wisata + nama_subkriteria (untuk halaman user - tanpa filter)
+    public function getAllWithNamaSubkriteria($limit = 9)
+    {
+        return $this->select('tb_alternatif.*, tb_subkriteria.nama_subkriteria')
+                    ->join('tb_subkriteria', 'tb_subkriteria.id_subkriteria = tb_alternatif.id_subkriteria')
+                    ->orderBy('tb_alternatif.id_alternatif', 'DESC')
+                    ->paginate($limit);
+    }
 
+    // Ambil wisata yang difilter berdasarkan id_subkriteria (kategori)
+    public function getAllWithNamaSubkriteriaByKategori($id_subkriteria, $limit = 9)
+    {
+        return $this->select('tb_alternatif.*, tb_subkriteria.nama_subkriteria')
+                    ->join('tb_subkriteria', 'tb_subkriteria.id_subkriteria = tb_alternatif.id_subkriteria')
+                    ->where('tb_alternatif.id_subkriteria', $id_subkriteria)
+                    ->orderBy('tb_alternatif.id_alternatif', 'DESC')
+                    ->paginate($limit);
+    }
 }

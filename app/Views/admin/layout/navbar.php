@@ -1,153 +1,136 @@
 <aside class="sidebar">
-    <div class="sidebar-header">
-  <span class="bon">Bon</span><span class="day">Day</span>
-</div>
+  <div class="sidebar-header">
+    <h1><span class="bon">Bon</span><span class="day">Day</span></h1>
+  </div>
 
-    <ul class="nav-list">
-        <li class="nav-item">
-            <a href="<?= base_url('admin/dashboard') ?>" class="nav-link">
-                <i class="bi bi-speedometer2"></i>
-                <span>Dashboard</span>
-            </a>
-        </li>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a href="<?= base_url('admin/dashboard') ?>" class="nav-link">
+        <i class="fas fa-tachometer-alt"></i>
+        <span>Dashboard</span>
+      </a>
+    </li>
 
-        <!-- Data Master Section -->
-        <li class="nav-item has-submenu">
-    <a href="#" class="nav-link">
-        <i class="bi bi-folder"></i>
+    <li class="nav-item has-submenu">
+      <a href="#" class="nav-link">
+        <i class="fas fa-database"></i>
         <span>Data Master</span>
-        <i class="bi bi-chevron-down submenu-toggle-icon"></i>
-    </a>
-    <ul class="submenu-static">
+        <i class="fas fa-chevron-down submenu-toggle-icon ms-auto"></i>
+      </a>
+      <ul class="submenu-static">
         <li><a href="<?= base_url('admin/alternatif') ?>">Alternatif</a></li>
         <li><a href="<?= base_url('admin/kriteria') ?>">Kriteria</a></li>
         <li><a href="<?= base_url('admin/subkriteria') ?>">Subkriteria</a></li>
         <li><a href="<?= base_url('admin/penilaian') ?>">Penilaian</a></li>
-        <li><a href="<?= base_url('admin/perhitungan') ?>">Perhitungan</a></li> <!-- ini tambahan -->
-    </ul>
-</li>
+        <li><a href="<?= base_url('admin/perhitungan') ?>">Perhitungan</a></li>
+      </ul>
+    </li>
 
+    <li class="nav-item">
+      <a href="<?= base_url('admin/artikel') ?>" class="nav-link">
+        <i class="fas fa-newspaper"></i>
+        <span>Artikel</span>
+      </a>
+    </li>
 
+    <li class="nav-item">
+      <a href="<?= base_url('admin/rekomendasi/riwayat') ?>" class="nav-link">
+        <i class="fas fa-history"></i>
+        <span>Riwayat</span>
+      </a>
+    </li>
 
-        <li class="nav-item">
-            <a href="<?= base_url('admin/artikel') ?>" class="nav-link">
-                <i class="bi bi-journal-text"></i>
-                <span>Artikel</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a href="<?= base_url('admin/rekomendasi/riwayat') ?>" class="nav-link">
-                <i class="bi bi-bag"></i>
-                <span>Riwayat</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a href="<?= base_url('admin/tentang/edit') ?>" class="nav-link">
-                <i class="bi bi-gear"></i>
-                <span>Tentang</span>
-            </a>
-        </li>
-    </ul>
+    <li class="nav-item">
+      <a href="<?= base_url('admin/tentang/edit') ?>" class="nav-link">
+        <i class="fas fa-cog"></i>
+        <span>Tentang</span>
+      </a>
+    </li>
+  </ul>
 </aside>
 
 <style>
-  /* Sidebar container tetap di kiri */
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    background-color: #67a4ff; /* kuning agak gelap */
-    color: #000; /* teks jadi hitam */
-    height: 100vh;
-    padding: 20px;
-    overflow-y: auto;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #212529;
+  color: #fff;
+  padding-top: 56px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1020;
 }
 
-/* Untuk memberikan ruang konten utama di kanan sidebar */
-.main-content {
-    margin-left: 250px;
-    padding: 20px;
-}
-
-/* Header Sidebar */
 .sidebar-header {
-    text-align: center;
-    padding-top: 30px;         /* agak turun tapi tidak terlalu jauh */
-    margin-bottom: 10px;       /* jarak ke menu */
-    font-family: 'Poppins', sans-serif; /* samakan font */
-    font-size: 3.5rem;         /* samakan ukuran */
-    font-weight: 600;          /* tidak terlalu tebal agar tidak kontras */
-    user-select: none;
-    letter-spacing: 0.5px;
+  text-align: center;
+  font-size: 2rem;        /* ukuran besar seperti h1 */
+  padding: 20px 0;
+  font-weight: 400;       /* normal, bukan bold */
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* font modern & bersih */
 }
 
-/* Warna tulisan BonDay */
+
 .sidebar-header .bon {
-    color: #ffcd1a;
-    font-style: italic;
+  color: #ffc107;
+  font-style: italic;
 }
 
 .sidebar-header .day {
-    color: #000;
+  color: #fff;
 }
 
-
-
-/* Navigation List */
 .nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 0 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-item {
-    margin-bottom: 10px;
+  margin: 0;
 }
 
 .nav-link {
-    display: flex;
-    align-items: center;
-    color: #000; /* teks item hitam */
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.2s ease, color 0.2s ease;
+  display: flex;
+  align-items: center;
+  color: #adb5bd;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.nav-link:hover {
-    background-color: #000; /* latar hitam saat hover */
-    color: #fff; /* teks putih saat hover */
+.nav-link:hover,
+.nav-link.active {
+  background-color: #343a40;
+  color: #fff;
 }
 
 .nav-link i {
-    margin-right: 10px;
-    color: inherit;
+  margin-right: 12px;
+  min-width: 20px;
+  text-align: center;
 }
 
 .submenu-static {
-    list-style: none;
-    padding-left: 25px; /* geser submenu ke kanan */
-    margin-top: 0px;
+  list-style: none;
+  padding-left: 2rem;
+  margin-top: 0;
 }
 
 .submenu-static li a {
-    display: block;
-    padding: 6px 0 6px 15px; /* tambahin padding kiri 15px */
-    color: #000;
-    text-decoration: none;
-    font-size: 0.95rem;
+  display: block;
+  padding: 0.5rem 0;
+  color: #adb5bd;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
 .submenu-static li a:hover {
-    background-color: #000; /* latar hitam saat hover */
-    color: #fff; /* teks putih saat hover */
-    border-radius: 8px; /* lengkung sudut */
-    transition: background-color 0.3s ease, color 0.3s ease; /* smooth transition */
+  color: #fff;
+  background-color: #343a40;
+  border-radius: 4px;
+  padding-left: 0.5rem;
 }
-
-
 </style>
