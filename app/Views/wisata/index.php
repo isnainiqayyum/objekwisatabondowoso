@@ -1,8 +1,6 @@
 <?= $this->extend('layouts/admin') ?> 
-// Meng-extend layout utama bernama 'admin' agar halaman ini menggunakan template admin
 
 <?= $this->section('content') ?> 
-// Menandai awal dari section 'content' yang akan dimasukkan ke dalam layout
 
 <style>
 // Gaya CSS yang digunakan untuk mempercantik tampilan halaman
