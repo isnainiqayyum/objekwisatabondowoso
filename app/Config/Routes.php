@@ -38,7 +38,7 @@ $routes->group('superadmin', ['filter' => 'role:super_admin'], function ($routes
 $routes->get('/admin/dashboard', 'DashboardAdminController::index', ['filter' => 'role:admin']);
 
 $routes->get('rekomendasi/filter-form', 'RekomendasiController::filterForm');  // Menampilkan form filter
-$routes->post('rekomendasi', 'RekomendasiController::index');                 // Proses filter dan tampilkan hasil JSON
+$routes->match(['get', 'post'], 'rekomendasi', 'RekomendasiController::index');
 
 $routes->group('admin/kriteria', [
     'namespace' => 'App\Controllers',
